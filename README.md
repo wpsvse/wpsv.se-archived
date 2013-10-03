@@ -1,5 +1,5 @@
-wordpress-sverige-dev
-=====================
+WordPress Sverige
+=================
 
 Uvecklingsversion av WordPress Sverige. Det här är ett försök till samlad utveckling av WordPress Sveriges communityportal. 
 
