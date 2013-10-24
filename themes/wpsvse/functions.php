@@ -99,7 +99,7 @@ function wpsvse_scripts() {
 		wp_enqueue_script( 'wpsvse-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
 	}
 	
-	wp_register_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.0.0' );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.0.0' );
 }
 add_action( 'wp_enqueue_scripts', 'wpsvse_scripts' );
 
