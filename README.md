@@ -3,7 +3,7 @@ WordPress Sverige
 
 Uvecklingsversion av WordPress Sverige. Det här är ett försök till samlad utveckling av WordPress Sveriges communityportal. 
 
-För diskussioner, använd ärendesystemet (Issues). Var inte rädda för att tycka till och säga ert!
+För diskussioner, använd [ärendesystemet (Issues)](https://github.com/EyesX/wordpress-sverige-dev/issues). Var inte rädda för att tycka till och säga ert!
 
 * [Informationsstruktur](https://github.com/EyesX/wordpress-sverige-dev/wiki/Informationsstruktur-f%C3%B6r-projektet)
 * [Projektplanering, mål och delmål](https://github.com/EyesX/wordpress-sverige-dev/wiki/Projektplanering,-m%C3%A5l-och-delm%C3%A5l)
