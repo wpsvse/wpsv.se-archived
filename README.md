@@ -7,7 +7,7 @@ För diskussioner, använd [ärendesystemet (Issues)](https://github.com/EyesX/w
 
 * [Informationsstruktur](https://github.com/EyesX/wordpress-sverige-dev/wiki/Informationsstruktur-f%C3%B6r-projektet)
 * [Projektplanering, mål och delmål](https://github.com/EyesX/wordpress-sverige-dev/wiki/Projektplanering,-m%C3%A5l-och-delm%C3%A5l)
-* [Allmän issue-tråd för diskussioner kring planering, tilldelning osv.](https://github.com/EyesX/wordpress-sverige-dev/wiki/Informationsstruktur-f%C3%B6r-projektet)
+* [Allmän issue-tråd för diskussioner kring planering, tilldelning osv.](https://github.com/EyesX/wordpress-sverige-dev/issues/22)
 
 Grund till föreslagna förändringar
 ==================================
