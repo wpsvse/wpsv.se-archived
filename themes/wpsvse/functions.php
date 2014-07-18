@@ -39,7 +39,7 @@ function wpsvse_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.
@@ -48,18 +48,6 @@ function wpsvse_setup() {
 		'primary' => __( 'Primary Menu', 'wpsvse' ),
 	) );
 
-	/**
-	 * Enable support for Post Formats
-	 */
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
-
-	/**
-	 * Setup the WordPress core custom background feature.
-	 */
-	add_theme_support( 'custom-background', apply_filters( 'wpsvse_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
 }
 endif; // wpsvse_setup
 add_action( 'after_setup_theme', 'wpsvse_setup' );
@@ -83,13 +71,22 @@ add_action( 'widgets_init', 'wpsvse_widgets_init' );
  * Enqueue scripts and styles
  */
 function wpsvse_scripts() {
+	
+	// Enqueue Stylesheets
 	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css' );
-	       
-    wp_enqueue_script( 'HTML5shiv', get_template_directory_uri() . '/js/html5shiv.js', array('jquery'), '3.7.0' );
+	
+	wp_enqueue_style( 'fontawesome-style', get_template_directory_uri() . '/css/font-awesome.min.css' );
+	
+	wp_enqueue_style( 'bbpress-style', get_template_directory_uri() . '/css/bbpress.css' );
+	
+	wp_enqueue_style( 'wpsvse-style', get_stylesheet_uri() );
+	
+	// Engueue Javascripts
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.2.0' );
+    
+	wp_enqueue_script( 'HTML5shiv', get_template_directory_uri() . '/js/html5shiv.js', array('jquery'), '3.7.0' );
 	
 	wp_enqueue_script( 'respond_js', get_template_directory_uri() . '/js/respond.min.js', array('jquery'), '1.3.0' );
-
-	wp_enqueue_style( 'wpsvse-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'wpsvse-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
@@ -103,14 +100,12 @@ function wpsvse_scripts() {
 		wp_enqueue_script( 'wpsvse-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
 	}
 	
-	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.0.0' );
+	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.min.js', array(), '2.8.3', true );
+	
+	wp_enqueue_script( 'wpsvse-scripts', get_template_directory_uri() . '/js/wpsvse.js', array(), '20140719', true );
+
 }
 add_action( 'wp_enqueue_scripts', 'wpsvse_scripts' );
-
-/**
- * Implement the Custom Header feature.
- */
-//require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
