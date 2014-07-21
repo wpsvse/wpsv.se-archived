@@ -12,10 +12,13 @@
       <section id="header-content" class="row">
         <!-- Start welcome -->
         <section id="welcome" class="section col-md-7">
-            <h1>Den officiella <strong>svenska</strong> portalen</h1>
-                <p class="hidden-xs">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
+        
+        	<?php while ( have_posts() ) : the_post();
+            
+            	the_content('Läs mer');
+                
+            endwhile; ?>
+            
             <section id="latest-downloads">
                 <h3>Ladda ner senaste WordPress</h3>
                     <div id="dl-btns" class="row">
