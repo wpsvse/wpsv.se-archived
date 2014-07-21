@@ -20,7 +20,7 @@
                 <h3>Ladda ner senaste WordPress</h3>
                     <div id="dl-btns" class="row">
                       <div class="col-md-8">
-                            <a class="btn btn-blue btn-sv-se" href="#"><i class="fa fa-cloud-download"></i>WordPress 4.0<br /><span>Det officiella paketet från wordpress.org</span></a>
+                            <a class="btn btn-blue btn-sv-se" href="#"><i class="fa fa-cloud-download"></i>WordPress 4.0 (internationell)<br /><span>Det officiella paketet från wordpress.org</span></a>
                           </div>
                           <p class="col-md-12"><a href="#" class="extra-download-link">Behöver du andra format? Ladda ner dom här &rarr;</a></p>
                     </div>
@@ -36,6 +36,7 @@
         </ol>
         <!-- End Slider Navigation -->
         <div class="carousel-inner">
+          <!-- Start INSERT SLIDER LOOP -->
             <div class="item row active">
                 <div class="text-center">
                     <img alt="" class="img-responsive" src="img/slider-1-screens.png">
@@ -58,6 +59,7 @@
                     </ul>
                 </div>
             </div>
+          <!-- End INSERT SLIDER LOOP -->
         </div>
         </section>
       </section>
