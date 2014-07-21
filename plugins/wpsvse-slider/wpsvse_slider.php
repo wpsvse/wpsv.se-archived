@@ -40,7 +40,7 @@ function wpsvse_cpt_slider() {
 		'show_ui' => true,
 		'show_in_menu' => true,
 		'menu_position' => 20,
-		'menu_icon' => 'dashicons-nametag',
+		'menu_icon' => 'dashicons-slides',
 		'show_in_nav_menus' => false,
 		'publicly_queryable' => true,
 		'exclude_from_search' => true,
