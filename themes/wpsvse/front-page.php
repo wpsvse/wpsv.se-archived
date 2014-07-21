@@ -85,52 +85,48 @@
 	<section id="latest-news" class="section">
 		<div class="container">
 			<div class="row">
-              <!-- Start INSERT NEWS LOOP -->
-            	<div class="col-md-4 article-item">
-                	<article>
-                      <div class="news-meta">
-                          <div class="news-comments">0 kommentarer</div>
-                          <time>Måndag, 21 januari</time>
-                          <img class="img-responsive" src="img/default.jpg" />
-                      </div>
-                      <div class="news-title-frame">
-                          <h3>En titel för en nyhet</h3>
-                          <div class="news-category">Postat under <span class="news-category">Nyheter</span></div>
-                      </div>
-                    </article>
-                </div>
-                <div class="col-md-4 article-item">
-                	<article>
-                      <div class="news-meta">
-                          <div class="news-comments">0 kommentarer</div>
-                          <time>Måndag, 21 januari</time>
-                          <img class="img-responsive" src="img/default.jpg" />
-                      </div>
-                      <div class="news-title-frame">
-                          <h3>En titel för en nyhet</h3>
-                          <div class="news-category">Postat under <span class="news-category">Nyheter</span></div>
-                      </div>
-                    </article>
-                </div>
-                <div class="col-md-4 article-item">
-                	<article>
-                      <div class="news-meta">
-                          <div class="news-comments">0 kommentarer</div>
-                          <time>Måndag, 21 januari</time>
-                          <img class="img-responsive" src="img/default.jpg" />
-                      </div>
-                      <div class="news-title-frame">
-                          <h3>En titel för en nyhet</h3>
-                          <div class="news-category">Postat under <span class="news-category">Nyheter</span></div>
-                      </div>
-                    </article>
-                </div>
-              <!-- End INSERT NEWS LOOP -->
+              <!-- Start NEWS LOOP -->
+              <?php // WP_Query arguments
+			  $args = array ( 'posts_per_page' => '3' );
+			  
+			  // The Query
+			  $news_query = new WP_Query( $args );
+			  
+			  // The Loop
+			  if ( $news_query->have_posts() ) {
+				  while ( $news_query->have_posts() ) {
+					  $news_query->the_post(); ?>
+                      
+                    <div class="col-md-4 article-item">
+                        <article>
+                          <div class="news-meta">
+                              <div class="news-comments"><?php comments_number( '0 kommentarer', '1 kommentar', '% kommentarer' ); ?></div>
+                              <time datetime="<?php the_time('c'); ?>"><?php the_time('l, j F'); ?></time>
+                              <a href="<?php the_permalink() ?>" title="Direktlänk till <?php the_title_attribute(); ?>" class="img-overlay">
+							  <?php if ( has_post_thumbnail() ) {	
+                                	the_post_thumbnail( 'post-image', array('class' => 'img-responsive') );
+                        	  } else { ?>
+                              	<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/default.jpg" />
+                              <?php } ?>
+                              </a>
+                          </div>
+                          <div class="news-title-frame">
+                              <h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Direktlänk till <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+                              <div class="news-category">Postat under <span class="news-category"><?php the_category(', '); ?></span></div>
+                          </div>
+                        </article>
+                    </div>
+                      
+			  <?php  }
+			  }
+			  
+			  // Restore original Post Data
+			  wp_reset_postdata(); ?>
+              <!-- End NEWS LOOP -->
 			</div>
 		</div>
 	</section>
 	<!-- End Latest News -->
-	
 	
 	<!-- Start Sponsor -->
 	<section id="sponsor" class="section">
@@ -138,7 +134,7 @@
 			<div class="row">
              <!-- Start INSERT AD WIDGET -->
               <a href="#" class="sponsor-link">
-                WordPress Sverige sponsras av
+                <?php bloginfo( 'name' ); ?> sponsras av
             	<img src="img/fsdata_sponsor.png" alt="" />
                 www.fsdata.se
               </a>
