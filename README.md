@@ -42,3 +42,7 @@ Den största grundstenen har alltid varit forumet och det är framför allt supp
 Det har även alltid funnits ett mål att organisera översättare för allt runt WordPress, att skapa en standard som kan användas genomgående för översättningar och som kan underlätta för den som vill översätta.
 
 Ett mål som vi haft svårt att nå är att skapa en samlingsplats även för professionella utvecklare av WordPress, för utbyte av kunskaper och erfarenheter, förmedling av uppdrag och för att skapa kontakter. Det har varit svårt att skapa open source/community-andan bland svenska professionella utvecklare. Problematiken är nog att många av dom professionella utvecklarna klarar sig bra med dom engelskspråkiga resurser som redan finns. Men det är en något vi gärna ser breddas även till att inkludera en svensk resurs som kan tilltala, inte minst för att skapa en grym svensk sammanhållning som community.
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/master
