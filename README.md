@@ -1,7 +1,7 @@
 WordPress Sverige
 =================
 
-Uvecklingsversion av WordPress Sverige. Det här är ett försök till samlad utveckling av WordPress Sveriges communityportal. 
+Utvecklingsversion av WordPress Sverige. Det här är ett försök till samlad utveckling av WordPress Sveriges communityportal. 
 
 För diskussioner, använd [ärendesystemet (Issues)](https://github.com/wpsvse/wpsv.se/issues). Var inte rädda för att tycka till och säga ert!
 
