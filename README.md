@@ -3,11 +3,11 @@ WordPress Sverige
 
 Uvecklingsversion av WordPress Sverige. Det här är ett försök till samlad utveckling av WordPress Sveriges communityportal. 
 
-För diskussioner, använd [ärendesystemet (Issues)](https://github.com/EyesX/wordpress-sverige-dev/issues). Var inte rädda för att tycka till och säga ert!
+För diskussioner, använd [ärendesystemet (Issues)](https://github.com/wpsvse/wpsv.se/issues). Var inte rädda för att tycka till och säga ert!
 
-* [Informationsstruktur](https://github.com/EyesX/wordpress-sverige-dev/wiki/Informationsstruktur-f%C3%B6r-projektet)
-* [Projektplanering, mål och delmål](https://github.com/EyesX/wordpress-sverige-dev/wiki/Projektplanering,-m%C3%A5l-och-delm%C3%A5l)
-* [Allmän issue-tråd för diskussioner kring planering, tilldelning osv.](https://github.com/EyesX/wordpress-sverige-dev/issues/22)
+* [Informationsstruktur](https://github.com/wpsvse/wpsv.se/wiki/Informationsstruktur-f%C3%B6r-projektet)
+* [Projektplanering, mål och delmål](https://github.com/wpsvse/wpsv.se/wiki/Projektplanering,-m%C3%A5l-och-delm%C3%A5l)
+* [Allmän issue-tråd för diskussioner kring planering, tilldelning osv.](https://github.com/wpsvse/wpsv.se/issues/22)
 
 Grund till föreslagna förändringar
 ==================================
@@ -42,7 +42,5 @@ Den största grundstenen har alltid varit forumet och det är framför allt supp
 Det har även alltid funnits ett mål att organisera översättare för allt runt WordPress, att skapa en standard som kan användas genomgående för översättningar och som kan underlätta för den som vill översätta.
 
 Ett mål som vi haft svårt att nå är att skapa en samlingsplats även för professionella utvecklare av WordPress, för utbyte av kunskaper och erfarenheter, förmedling av uppdrag och för att skapa kontakter. Det har varit svårt att skapa open source/community-andan bland svenska professionella utvecklare. Problematiken är nog att många av dom professionella utvecklarna klarar sig bra med dom engelskspråkiga resurser som redan finns. Men det är en något vi gärna ser breddas även till att inkludera en svensk resurs som kan tilltala, inte minst för att skapa en grym svensk sammanhållning som community.
-<<<<<<< HEAD
 
 =======
->>>>>>> origin/master
