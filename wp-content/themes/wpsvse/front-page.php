@@ -6,7 +6,7 @@
  *
  * @package WordPress Sverige
  */
-?>
+get_header(); ?>
 
     <div class="container">
       <section id="header-content" class="row">
@@ -135,7 +135,7 @@
              <!-- Start INSERT AD WIDGET -->
               <a href="#" class="sponsor-link">
                 <?php bloginfo( 'name' ); ?> sponsras av
-            	<img src="img/fsdata_sponsor.png" alt="" />
+            	<img src="<?php echo get_template_directory_uri(); ?>/img/fsdata_sponsor.png" alt="" />
                 www.fsdata.se
               </a>
              <!-- End INSERT AD WIDGET -->
@@ -544,3 +544,5 @@
 		</div>
 	</section>
 	<!-- End Social Media -->
+
+<?php get_footer(); ?>
