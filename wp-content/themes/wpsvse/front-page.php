@@ -39,30 +39,28 @@ get_header(); ?>
         </ol>
         <!-- End Slider Navigation -->
         <div class="carousel-inner">
-          <!-- Start INSERT SLIDER LOOP -->
-            <div class="item row active">
-                <div class="text-center">
-                    <img alt="" class="img-responsive" src="img/slider-1-screens.png">
-                </div>
-            </div>
-            <div class="item row">
-                <div class="col-xs-5 text-center">
-                    <img alt="" class="img-responsive" src="img/placeholder.png">
-                </div>
-                <div class="col-xs-7">
-                    <h2>Landing Page For Any Purpose.</h2>
-                    <p class="hidden-xs">
-                         Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
-                    </p>
-                    <ul class="listings hidden-xs">
-                        <li><i class="fa fa-check"></i>Many addon features</li>
-                        <li><i class="fa fa-check"></i>Fully responsive &amp; adaptive</li>
-                        <li><i class="fa fa-check"></i>SEO optimized</li>
-                        <li><i class="fa fa-check"></i>Attractive with a modern touch</li>
-                    </ul>
-                </div>
-            </div>
-          <!-- End INSERT SLIDER LOOP -->
+          <!-- Start SLIDER -->
+		  <?php // WP_Query arguments
+          $slider_args = array ( 'posts_per_page' => '3' );
+          
+          // The Query
+          $slider_query = new WP_Query( $slider_args );
+          
+          // The Loop
+          if ( $slider_query->have_posts() ) {
+              while ( $slider_query->have_posts() ) {
+                  $slider_query->the_post(); ?>
+
+              <div class="item row">
+              	  <?php the_content(); ?>
+              </div>
+
+          <?php }
+          }
+          
+          // Restore original Post Data
+          wp_reset_postdata(); ?>
+          <!-- End SLIDER -->
         </div>
         </section>
       </section>
@@ -87,10 +85,10 @@ get_header(); ?>
 			<div class="row">
               <!-- Start NEWS LOOP -->
               <?php // WP_Query arguments
-			  $args = array ( 'posts_per_page' => '3' );
+			  $news_args = array ( 'posts_per_page' => '3' );
 			  
 			  // The Query
-			  $news_query = new WP_Query( $args );
+			  $news_query = new WP_Query( $news_args );
 			  
 			  // The Loop
 			  if ( $news_query->have_posts() ) {
