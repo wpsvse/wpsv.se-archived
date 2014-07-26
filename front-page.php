@@ -66,6 +66,9 @@ get_header(); ?>
       </section>
     </div>
     <!-- End Slider -->
+   	</div>
+	<!-- End Top-part -->
+
 
 	<!-- Start Quick Buttons -->
     <section id="quick-buttons" class="section">

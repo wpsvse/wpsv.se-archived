@@ -45,5 +45,7 @@
 		<!-- End Navigation -->
 		</header>
 		<!-- End Header -->
+  <?php if ( !is_front_page() ) { ?>
 	</div>
 	<!-- End Top-part -->
+  <?php } ?>
