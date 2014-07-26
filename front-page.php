@@ -23,7 +23,7 @@ get_header(); ?>
                 <h3>Ladda ner senaste WordPress</h3>
                     <div id="dl-btns" class="row">
                       <div class="col-md-8">
-                            <a class="btn btn-blue btn-sv-se" href="#"><i class="fa fa-cloud-download"></i>WordPress 4.0 (internationell)<br /><span>Det officiella paketet från wordpress.org</span></a>
+                            <a class="btn btn-blue btn-sv-se" href="#"><i class="fa fa-cloud-download"></i>WordPress 4.0 <span>(internationell)</span><br /><span>Det officiella paketet från wordpress.org</span></a>
                           </div>
                           <p class="col-md-12"><a href="#" class="extra-download-link">Behöver du andra format? Ladda ner dom här &rarr;</a></p>
                     </div>
@@ -41,7 +41,7 @@ get_header(); ?>
         <div class="carousel-inner">
           <!-- Start SLIDER -->
 		  <?php // WP_Query arguments
-          $slider_args = array ( 'posts_per_page' => '3' );
+          $slider_args = array ( 'posts_per_page' => '3','post_type' => 'wpsvse_slider' );
           
           // The Query
           $slider_query = new WP_Query( $slider_args );
@@ -133,13 +133,9 @@ get_header(); ?>
 	<section id="sponsor" class="section">
 		<div class="container">
 			<div class="row">
-             <!-- Start INSERT AD WIDGET -->
-              <a href="#" class="sponsor-link">
-                <?php bloginfo( 'name' ); ?> sponsras av
-            	<img src="<?php echo get_template_directory_uri(); ?>/img/fsdata_sponsor.png" alt="" />
-                www.fsdata.se
-              </a>
-             <!-- End INSERT AD WIDGET -->
+             <!-- Start SPONSOR WIDGET -->
+	             <?php if ( ! dynamic_sidebar( 'sponsor-widget' ) ) : endif; // end sidebar widget area ?>
+             <!-- End SPONSOR WIDGET -->
 			</div>		
 		</div>
 	</section>

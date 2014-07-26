@@ -45,7 +45,7 @@ function wpsvse_setup() {
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'wpsvse' ),
+		'primary' => __( 'Huvudmeny', 'wpsvse' ),
 	) );
 
 }
@@ -57,12 +57,20 @@ add_action( 'after_setup_theme', 'wpsvse_setup' );
  */
 function wpsvse_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'wpsvse' ),
+		'name'          => __( 'Sidofält', 'wpsvse' ),
 		'id'            => 'sidebar-1',
+		'description'   => 'Allmänt widgetfält för sidopaneler.',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Huvudsponsor', 'wpsvse' ),
+		'id'            => 'sponsor-widget',
+		'description'   => 'Widgetfält på startsidan för huvudsponsor.',
+		'before_widget' => '<div id="%1$s" class="widget sponsor-link %2$s">',
+		'after_widget'  => '</div>',
 	) );
 }
 add_action( 'widgets_init', 'wpsvse_widgets_init' );
