@@ -133,13 +133,9 @@ get_header(); ?>
 	<section id="sponsor" class="section">
 		<div class="container">
 			<div class="row">
-             <!-- Start INSERT AD WIDGET -->
-              <a href="#" class="sponsor-link">
-                <?php bloginfo( 'name' ); ?> sponsras av
-            	<img src="<?php echo get_template_directory_uri(); ?>/img/fsdata_sponsor.png" alt="" />
-                www.fsdata.se
-              </a>
-             <!-- End INSERT AD WIDGET -->
+             <!-- Start SPONSOR WIDGET -->
+	             <?php if ( ! dynamic_sidebar( 'sponsor-widget' ) ) : endif; // end sidebar widget area ?>
+             <!-- End SPONSOR WIDGET -->
 			</div>		
 		</div>
 	</section>

@@ -69,7 +69,7 @@ function wpsvse_widgets_init() {
 		'name'          => __( 'Huvudsponsor', 'wpsvse' ),
 		'id'            => 'sponsor-widget',
 		'description'   => 'Widgetfält på startsidan för huvudsponsor.',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'before_widget' => '<div id="%1$s" class="widget sponsor-link %2$s">',
 		'after_widget'  => '</div>',
 	) );
 }
