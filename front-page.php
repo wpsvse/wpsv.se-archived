@@ -41,7 +41,10 @@ get_header(); ?>
         <div class="carousel-inner">
           <!-- Start SLIDER -->
 		  <?php // WP_Query arguments
-          $slider_args = array ( 'posts_per_page' => '3','post_type' => 'wpsvse_slider' );
+          $slider_args = array (
+		  		'posts_per_page' 	=> '3',
+		  		'post_type' 		=> 'wpsvse_slider' 
+		  );
           
           // The Query
           $slider_query = new WP_Query( $slider_args );
@@ -112,7 +115,7 @@ get_header(); ?>
                               </a>
                           </div>
                           <div class="news-title-frame">
-                              <h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Direktlänk till <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+                              <h3><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
                               <div class="news-category">Postat under <span class="news-category"><?php the_category(', '); ?></span></div>
                           </div>
                         </article>
@@ -160,36 +163,41 @@ get_header(); ?>
 	<div class="container">
         <div class="row">
           <div class="blog-item-content">
-          <!-- Start INSERT CPT BLOG LOOP -->
-            <article class="col-md-3 blog-item">
-                <img src="img/default.jpg" class="img-responsive img-thumbnail" alt="" />
-                <h4>En bloggpost här</h4>
-                <span>29 januari</span>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
-                <a href="#" class="btn-primary btn-sm">Läs mer</a>
-            </article>
-            <article class="col-md-3 blog-item">
-                <img src="img/default.jpg" class="img-responsive img-thumbnail" alt="" />
-                <h4>En bloggpost här</h4>
-                <span>29 januari</span>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
-                <a href="#" class="btn-primary btn-sm">Läs mer</a>
-            </article>
-            <article class="col-md-3 blog-item">
-                <img src="img/default.jpg" class="img-responsive img-thumbnail" alt="" />
-                <h4>En bloggpost här</h4>
-                <span>29 januari</span>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
-                <a href="#" class="btn-primary btn-sm">Läs mer</a>
-            </article>
-            <article class="col-md-3 blog-item">
-                <img src="img/default.jpg" class="img-responsive img-thumbnail" alt="" />
-                <h4>En bloggpost här</h4>
-                <span>29 januari</span>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
-                <a href="#" class="btn-primary btn-sm">Läs mer</a>
-            </article>
-           <!-- End INSERT CPT BLOG LOOP -->
+              <!-- Start BLOG LOOP -->
+              <?php // WP_Query arguments
+              $args = array (
+                  'post_type'              => 'wpsvse_blog',
+                  'posts_per_page'         => '4',
+              );
+              
+              // The Query
+              $blog_query = new WP_Query( $args );
+              
+              // The Loop
+              if ( $blog_query->have_posts() ) {
+                  while ( $blog_query->have_posts() ) {
+                      $blog_query->the_post(); ?>
+                      
+                    <article class="col-md-3 blog-item">
+                        <a href="<?php the_permalink() ?>" title="Direktlänk till <?php the_title_attribute(); ?>" class="img-overlay">
+						<?php if ( has_post_thumbnail() ) {	
+                              the_post_thumbnail( 'post-image', array('class' => 'img-responsive img-thumbnail') );
+                        } else { ?>
+                          <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/default.jpg" />
+                        <?php } ?>
+                        </a>
+                        <h4><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h4>
+                        <span><i class="fa fa-clock-o"></i> <time datetime="<?php the_time('c'); ?>"><?php the_time('j F'); ?></time> <i class="fa fa-comments-o"></i> <?php comments_number( '0 kommentarer', '1 kommentar', '% kommentarer' ); ?></span>
+                        <?php the_excerpt(); ?>
+                        <a href="<?php the_permalink() ?>" class="btn-primary btn-sm">Läs mer</a>
+                    </article>
+                
+              <?php  }
+              }
+              
+              // Restore original Post Data
+              wp_reset_postdata(); ?>
+              <!-- End BLOG LOOP -->
             <div class="clearfix"></div>
           </div>
         </div>
