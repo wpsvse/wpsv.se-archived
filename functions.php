@@ -46,7 +46,11 @@ function wpsvse_setup() {
 	 */
 	register_nav_menus( array(
 		'primary' => __( 'Huvudmeny', 'wpsvse' ),
+		'footer' => __( 'Sidfot', 'wpsvse' ),
 	) );
+	
+	// Register Custom Navigation Walker
+	require_once('inc/wp_bootstrap_navwalker.php');
 
 }
 endif; // wpsvse_setup
@@ -85,7 +89,7 @@ function wpsvse_scripts() {
 	
 	wp_enqueue_style( 'fontawesome-style', get_template_directory_uri() . '/css/font-awesome.min.css' );
 	
-	wp_enqueue_style( 'bbpress-style', get_template_directory_uri() . '/css/bbpress.css' );
+	// wp_enqueue_style( 'bbpress-style', get_template_directory_uri() . '/css/bbpress.css' );
 	
 	wp_enqueue_style( 'wpsvse-style', get_stylesheet_uri() );
 	
