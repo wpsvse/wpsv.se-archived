@@ -46,6 +46,7 @@ function wpsvse_setup() {
 	 */
 	register_nav_menus( array(
 		'primary' => __( 'Huvudmeny', 'wpsvse' ),
+		'footer' => __( 'Sidfot', 'wpsvse' ),
 	) );
 	
 	// Register Custom Navigation Walker
