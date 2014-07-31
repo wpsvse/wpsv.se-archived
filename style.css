@@ -765,7 +765,18 @@ input[type=text],
 /* ==========================================================================
 	Activity 
 ============================================================================ */
-
+.bp-statuses {
+	padding: 25px;
+	background-color: #f8f8f8;
+	border: 1px solid #eee;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#whats-new-avatar .avatar {
+	width: 64px;
+	height: 64px;
+}
 
 /* ==========================================================================
 	Other

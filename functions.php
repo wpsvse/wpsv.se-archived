@@ -42,6 +42,16 @@ function wpsvse_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	/**
+	 * Resizes avatars (buddypress)
+	 */
+	define ( 'BP_AVATAR_THUMB_WIDTH', 128 );
+	define ( 'BP_AVATAR_THUMB_HEIGHT', 128 );
+	define ( 'BP_AVATAR_FULL_WIDTH', 512 );
+	define ( 'BP_AVATAR_FULL_HEIGHT', 512 );
+	define ( 'BP_AVATAR_ORIGINAL_MAX_WIDTH', 512 );
+	define ( 'BP_AVATAR_ORIGINAL_MAX_FILESIZE', 819200 );
+
+	/**
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
