@@ -31,7 +31,7 @@ jq(document).ready( function() {
 			height:'50px'
 		});
 		jq("#whats-new-form textarea").animate({
-			height:'50px'
+			height:'45px'
 		});
 		jq.scrollTo( $whats_new, 500, {
 			offset:-125,
@@ -201,7 +201,7 @@ jq(document).ready( function() {
 				height:'0px'
 			});
 			jq("#whats-new-form textarea").animate({
-				height:'20px'
+				height:'40px'
 			});
 			jq("#aw-whats-new-submit").prop("disabled", true).removeClass('loading');
 		});
