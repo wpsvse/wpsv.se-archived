@@ -28,7 +28,7 @@ jq(document).ready( function() {
 	var $whats_new = jq('#whats-new');
 	if ( jq.query.get('r') && $whats_new.length ) {
 		jq('#whats-new-options').animate({
-			height:'40px'
+			height:'50px'
 		});
 		jq("#whats-new-form textarea").animate({
 			height:'50px'
@@ -46,7 +46,7 @@ jq(document).ready( function() {
 	/* Textarea focus */
 	$whats_new.focus( function(){
 		jq("#whats-new-options").animate({
-			height:'40px'
+			height:'50px'
 		});
 		jq("#whats-new-form textarea").animate({
 			height:'45px'
@@ -79,10 +79,10 @@ jq(document).ready( function() {
 			if (!this.value.match(/\S+/)) {
 				this.value = "";
 				jq("#whats-new-options").animate({
-					height:'40px'
+					height:'50px'
 				});
 				jq("form#whats-new-form textarea").animate({
-					height:'40px'
+					height:'45px'
 				});
 				jq("#aw-whats-new-submit").prop("disabled", true);
 			}

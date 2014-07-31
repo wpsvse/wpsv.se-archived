@@ -129,18 +129,20 @@ Hello, this is the BuddyPress Legacy stylesheet.
 	font-size: 90%;
 	height: 40px;
 	padding: 6px;
-	width: 98%;
 }
 body.no-js #buddypress form#whats-new-form textarea {
 	height: 50px;
 }
 #buddypress form#whats-new-form #whats-new-options select {
 	max-width: 200px;
-	margin-top: 12px;
+	display: inline;
+}
+#whats-new-post-in-box {
+	margin-top: 8px;
 }
 #buddypress form#whats-new-form #whats-new-submit {
 	float: right;
-	margin-top: 12px;
+	margin-top: 8px;
 }
 #buddypress #whats-new-options {
 	overflow: auto;
@@ -712,7 +714,7 @@ body.activity-permalink #buddypress div.activity-comments div.acomment-content {
 	padding: 5px;
 	width: 160px;
 }
-#buddypress button,
+/*#buddypress button,
 #buddypress a.button,
 #buddypress input[type=submit],
 #buddypress input[type=button],
@@ -721,7 +723,7 @@ body.activity-permalink #buddypress div.activity-comments div.acomment-content {
 #buddypress div.generic-button a,
 #buddypress .comment-reply-link,
 a.bp-title-button {
-	background: #fff; /* Old browsers */
+	background: #fff;
 	border: 1px solid #ccc;
 	color: #777;
 	font-size: .8rem;
@@ -747,7 +749,7 @@ a.bp-title-button {
 	outline: none;
 	text-decoration: none;
 }
-
+*/
 #buddypress form.standard-form .left-menu {
 	float: left;
 }

@@ -13,35 +13,41 @@
 
 	<?php do_action( 'bp_before_activity_post_form' ); ?>
 
-	<div id="whats-new-avatar">
-		<a href="<?php echo bp_loggedin_user_domain(); ?>">
-			<?php bp_loggedin_user_avatar( 'width=' . bp_core_avatar_thumb_width() . '&height=' . bp_core_avatar_thumb_height() ); ?>
-		</a>
-	</div>
-	
-	<p class="activity-greeting"><?php if ( bp_is_group() )
-		printf( __( "What's new in %s, %s?", 'buddypress' ), bp_get_group_name(), bp_get_user_firstname() );
-	else
-		printf( __( "What's new, %s?", 'buddypress' ), bp_get_user_firstname() );
-	?></p>
-
-	<div id="whats-new-content">
-		<div id="whats-new-textarea">
-			<textarea name="whats-new" id="whats-new" class="form-control" cols="50" rows="2"><?php if ( isset( $_GET['r'] ) ) : ?>@<?php echo esc_attr( $_GET['r'] ); ?> <?php endif; ?></textarea>
-		</div>
-
-	</div><!-- #whats-new-content -->
+	<div class="bp-statuses-inner">
+    
+        <div id="whats-new-avatar">
+            <a href="<?php echo bp_loggedin_user_domain(); ?>">
+                <?php bp_loggedin_user_avatar( 'width=' . bp_core_avatar_thumb_width() . '&height=' . bp_core_avatar_thumb_height() ); ?>
+            </a>
+        </div>
+        
+        <p class="activity-greeting"><?php if ( bp_is_group() )
+            printf( __( "What's new in %s, %s?", 'buddypress' ), bp_get_group_name(), bp_get_user_firstname() );
+        else
+            printf( __( "What's new, %s?", 'buddypress' ), bp_get_user_firstname() );
+        ?></p>
+    
+        <div id="whats-new-content">
+            <div id="whats-new-textarea">
+                <textarea name="whats-new" id="whats-new" class="form-control" cols="50" rows="2"><?php if ( isset( $_GET['r'] ) ) : ?>@<?php echo esc_attr( $_GET['r'] ); ?> <?php endif; ?></textarea>
+            </div>
+    
+        </div><!-- #whats-new-content -->
+    
+    </div>
     
     <div id="whats-new-options">
         <div id="whats-new-submit">
-            <input type="submit" name="aw-whats-new-submit" class="btn" id="aw-whats-new-submit" value="<?php _e( 'Post Update', 'buddypress' ); ?>" />
+            <input type="submit" name="aw-whats-new-submit" class="btn btn-primary" id="aw-whats-new-submit" value="<?php _e( 'Post Update', 'buddypress' ); ?>" />
         </div>
 
         <?php if ( bp_is_active( 'groups' ) && !bp_is_my_profile() && !bp_is_group() ) : ?>
 
             <div id="whats-new-post-in-box">
 
-                <?php _e( 'Post in', 'buddypress' ); ?>:
+                <div class="input-group">
+				
+				<span class="input-group-addon"><?php _e( 'Post in', 'buddypress' ); ?></span>
 
                 <select id="whats-new-post-in" name="whats-new-post-in" class="form-control">
                     <option selected="selected" value="0"><?php _e( 'My Profile', 'buddypress' ); ?></option>
@@ -55,6 +61,7 @@
                     endif; ?>
 
                 </select>
+                </div>
             </div>
             <input type="hidden" id="whats-new-post-object" name="whats-new-post-object" value="groups" />
 
