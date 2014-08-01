@@ -777,7 +777,8 @@ input[type=text],
 .bp-statuses-inner {
 	padding: 25px 25px 0 25px;
 }
-#whats-new-avatar .avatar {
+#whats-new-avatar .avatar,
+.activity-avatar .avatar {
 	width: 64px;
 	height: 64px;
 }
@@ -785,6 +786,21 @@ input[type=text],
 	padding: 0 25px;
 	background-color: #fff;
 	border-top: 1px solid #eee;
+}
+#whats-new-options .input-group-addon {
+	background-color: #21759b;
+	color: #fff;
+	border-color: #21759b;
+}
+.activity-type-tabs {
+	margin-top: 15px;
+	background-color: #f8f8f8;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.delete-activity {
+	color: #C30;
 }
 
 /* ==========================================================================
