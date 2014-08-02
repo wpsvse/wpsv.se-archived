@@ -777,10 +777,24 @@ input[type=text],
 .bp-statuses-inner {
 	padding: 25px 25px 0 25px;
 }
+.ac-comment-head {
+	font-size: 120%;
+	float: left;
+}
+.ac-comment-user {
+	font-size: 90%;
+	float: right;
+	padding: 3px;
+}
 #whats-new-avatar .avatar,
 .activity-avatar .avatar {
 	width: 64px;
 	height: 64px;
+}
+.ac-comment-user .avatar {
+	width: 20px;
+	height: 20px;
+	margin-left: 10px !important;
 }
 #whats-new-options {
 	padding: 0 25px;
