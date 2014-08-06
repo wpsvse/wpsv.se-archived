@@ -86,6 +86,15 @@ function wpsvse_widgets_init() {
 		'before_widget' => '<div id="%1$s" class="widget sponsor-link %2$s">',
 		'after_widget'  => '</div>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Grupper', 'wpsvse' ),
+		'id'            => 'group-widget',
+		'description'   => 'Widgetfält på startsidan för aktiva grupper.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<span style="display:none">',
+		'after_title'   => '</span>',
+	) );
 }
 add_action( 'widgets_init', 'wpsvse_widgets_init' );
 

@@ -818,6 +818,36 @@ input[type=text],
 }
 
 /* ==========================================================================
+	Groups 
+============================================================================ */
+#bp-groups {
+}
+#bp-groups .item {
+	position: relative;
+}
+#bp-groups .item img {
+	max-width: 100%;
+	height: auto;
+}
+#bp-groups .item-title,
+#bp-groups .item-meta {
+	position: absolute;
+	right: 0;
+	color: #fff !important;
+	padding: 3px 8px;
+}
+#bp-groups .item-title {
+	background-color: rgba(33,117,155,.7);
+	bottom: 23px;
+	font-size: 16px;
+}
+#bp-groups .item-meta {
+	background-color: rgba(51,51,51,.7);
+	bottom: 0;
+	font-size: 12px;
+}
+
+/* ==========================================================================
 	Other
 ============================================================================ */
 
