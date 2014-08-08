@@ -363,7 +363,6 @@ input[type=text],
 .form-inline input,
 .form-control {
     border: 1px solid rgba(0,0,0.5);
-    padding: 10px;
 }
 
 /* ==========================================================================
@@ -765,7 +764,88 @@ input[type=text],
 /* ==========================================================================
 	Activity 
 ============================================================================ */
+.bp-statuses {
+	background-color: #f8f8f8;
+	border: 1px solid #eee;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.bp-statuses-inner {
+	padding: 25px 25px 0 25px;
+}
+.ac-comment-head {
+	font-size: 120%;
+	float: left;
+}
+.ac-comment-user {
+	font-size: 90%;
+	float: right;
+	padding: 3px;
+}
+#whats-new-avatar .avatar,
+.activity-avatar .avatar {
+	width: 64px;
+	height: 64px;
+}
+.ac-comment-user .avatar {
+	width: 20px;
+	height: 20px;
+	margin-left: 10px !important;
+}
+#whats-new-options {
+	padding: 0 25px;
+	background-color: #fff;
+	border-top: 1px solid #eee;
+}
+#whats-new-options .input-group-addon {
+	background-color: #21759b;
+	color: #fff;
+	border-color: #21759b;
+}
+.activity-type-tabs {
+	margin-top: 15px;
+	background-color: #f8f8f8;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.delete-activity {
+	color: #C30;
+}
 
+/* ==========================================================================
+	Groups 
+============================================================================ */
+#bp-groups {
+}
+#bp-groups .item {
+	position: relative;
+}
+#bp-groups .item img {
+	max-width: 100%;
+	height: auto;
+}
+#bp-groups .item-title,
+#bp-groups .item-meta {
+	position: absolute;
+	right: 0;
+	color: #fff !important;
+	padding: 3px 8px;
+}
+#bp-groups .item-title {
+	background-color: rgba(33,117,155,.7);
+	bottom: 23px;
+	font-size: 16px;
+}
+#bp-groups .item-meta {
+	background-color: rgba(51,51,51,.7);
+	bottom: 0;
+	font-size: 12px;
+}
 
 /* ==========================================================================
 	Other

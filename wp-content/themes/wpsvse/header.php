@@ -38,7 +38,7 @@
 					<!-- End Logo / Text -->
 				</div>
 				<div class="navbar-collapse collapse">
-					<!-- INSERT WP_NAV_MENU -->
+					<?php wp_nav_menu( array( 'theme_location' => 'primary','container' => false,'items_wrap' => '<ul id="menu" class="nav navbar-nav %2$s">%3$s</ul>', 'fallback_cb' => 'wp_bootstrap_navwalker::fallback', 'walker' => new wp_bootstrap_navwalker() ) ); ?>
 				</div>
 			</div>
 			</nav>

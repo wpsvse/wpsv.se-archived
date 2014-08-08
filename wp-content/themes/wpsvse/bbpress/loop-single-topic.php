@@ -80,8 +80,7 @@
 	</li>
 
 	<li class="bbp-topic-counts">
-		Voices: <?php bbp_topic_voice_count(); ?><br />
-		Posts: <?php bbp_show_lead_topic() ? bbp_topic_reply_count() : bbp_topic_post_count(); ?>
+		<i class="fa fa-comment"></i><div class="bbp-count-badge"><?php bbp_show_lead_topic() ? bbp_topic_reply_count() : bbp_topic_post_count(); ?></div>
 	</li>
 
 	<li class="bbp-topic-freshness">

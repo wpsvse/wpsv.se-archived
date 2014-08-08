@@ -215,178 +215,13 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="row">
-              <!-- Start INSERT BBPRESS LATEST FORUM POST LOOP -->
+              	
             	<div class="latest-forum-topics col-md-9">
-                    <ul id="bbp-forum-63467" class="bbp-topics">
-                        <li class="bbp-header">
-                            <ul class="forum-titles">
-                                <li class="bbp-topic-title">Ämne</li>
-                                <li class="bbp-topic-counts">Inlägg</li>
-                                <li class="bbp-topic-freshness">Aktivitet</li>
-                            </ul>
-                        </li>
-                        <li class="bbp-body">
-                    <ul id="topic-120382" class="post-120382 topic type-topic status-publish hentry odd bbp-parent-forum-63467 user-id-12442">
-                        <li class="bbp-topic-title">
-                            <a class="bbp-topic-permalink" href="http://wpsv.se/forum/amne/text-och-bild/" title="Text och bild">Text och bild</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-started-by">Startat av: <a href="http://wpsv.se/medlemmar/beinar/" title="Visa beinar's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/823e8fe82a8ab08f374253980915ccc8?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-12442-avatar avatar-14 photo" width="14" height="14" alt="Avatar för beinar"></a>&nbsp;<a href="http://wpsv.se/medlemmar/beinar/" title="Visa beinar's profil" class="bbp-author-name" rel="nofollow">beinar</a></span>
-                            </p>
-                        </li>
-                        <li class="bbp-topic-counts"><i class="fa fa-comment"></i><div class="bbp-count-badge">25</div></li>
-                        <li class="bbp-topic-freshness">
-                            <a href="http://wpsv.se/forum/amne/text-och-bild/#post-126878" title="Sv: Text och bild">3 månader, 2 veckor sedan</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-freshness-author"><a href="http://wpsv.se/medlemmar/alexbangkok/" title="Visa AlexBangkok's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/2f93fad1510ef3b31dbf233a2c2876b5?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-11908-avatar avatar-14 photo" width="14" height="14" alt="Avatar för AlexBangkok"></a>&nbsp;<a href="http://wpsv.se/medlemmar/alexbangkok/" title="Visa AlexBangkok's profil" class="bbp-author-name" rel="nofollow">AlexBangkok</a></span>
-                            </p>
-                        </li>
-                    </ul><!-- #topic-120382 -->
-                    <ul id="topic-120373" class="post-120373 topic type-topic status-publish hentry even bbp-parent-forum-63467 user-id-1695">
-                        <li class="bbp-topic-title">
-                            <a class="bbp-topic-permalink" href="http://wpsv.se/forum/amne/blanda-wordpress-och-egenutvecklade-sidor-pa-en-sajt/" title="Blanda WordPress och egenutvecklade sidor på en sajt">Blanda WordPress och egenutvecklade sidor på en sajt</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-started-by">Startat av: <a href="http://wpsv.se/medlemmar/bruse/" title="Visa bruse's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/693685197913e4037097eacae4d78b61?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-1695-avatar avatar-14 photo" width="14" height="14" alt="Avatar för bruse"></a>&nbsp;<a href="http://wpsv.se/medlemmar/bruse/" title="Visa bruse's profil" class="bbp-author-name" rel="nofollow">bruse</a></span>
-                            </p>
-                        </li>
-                        <li class="bbp-topic-counts"><i class="fa fa-comment"></i><div class="bbp-count-badge">10</div></li>
-                        <li class="bbp-topic-freshness">
-                            <a href="http://wpsv.se/forum/amne/blanda-wordpress-och-egenutvecklade-sidor-pa-en-sajt/#post-126875" title="Sv: Blanda WordPress och egenutvecklade sidor på en sajt">3 månader, 2 veckor sedan</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-freshness-author"><a href="http://wpsv.se/medlemmar/bruse/" title="Visa bruse's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/693685197913e4037097eacae4d78b61?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-1695-avatar avatar-14 photo" width="14" height="14" alt="Avatar för bruse"></a>&nbsp;<a href="http://wpsv.se/medlemmar/bruse/" title="Visa bruse's profil" class="bbp-author-name" rel="nofollow">bruse</a></span>
-                            </p>
-                        </li>
-                    </ul><!-- #topic-120373 -->
-                    <ul id="topic-120379" class="post-120379 topic type-topic status-publish hentry odd bbp-parent-forum-63467 user-id-8645">
-                        <li class="bbp-topic-title">
-                            <a class="bbp-topic-permalink" href="http://wpsv.se/forum/amne/vad-har-hant-min-forstasida-visas-markligt/" title="Vad har hänt? Min förstasida visas märkligt…">Vad har hänt? Min förstasida visas märkligt…</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-started-by">Startat av: <a href="http://wpsv.se/medlemmar/ottossonphoto/" title="Visa OttossonPhoto's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/e5dc6c4778abeddf5e13f89d44a1f29c?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-8645-avatar avatar-14 photo" width="14" height="14" alt="Avatar för OttossonPhoto"></a>&nbsp;<a href="http://wpsv.se/medlemmar/ottossonphoto/" title="Visa OttossonPhoto's profil" class="bbp-author-name" rel="nofollow">OttossonPhoto</a></span>
-                            </p>
-                        </li>
-                        <li class="bbp-topic-counts"><i class="fa fa-comment"></i><div class="bbp-count-badge">3</div></li>
-                        <li class="bbp-topic-freshness">
-                            <a href="http://wpsv.se/forum/amne/vad-har-hant-min-forstasida-visas-markligt/#post-126866" title="Sv: Vad har hänt? Min förstasida visas märkligt…">3 månader, 3 veckor sedan</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-freshness-author"><a href="http://wpsv.se/medlemmar/ottossonphoto/" title="Visa OttossonPhoto's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/e5dc6c4778abeddf5e13f89d44a1f29c?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-8645-avatar avatar-14 photo" width="14" height="14" alt="Avatar för OttossonPhoto"></a>&nbsp;<a href="http://wpsv.se/medlemmar/ottossonphoto/" title="Visa OttossonPhoto's profil" class="bbp-author-name" rel="nofollow">OttossonPhoto</a></span>
-                            </p>
-                        </li>
-                    </ul><!-- #topic-120379 -->
-                    <ul id="topic-120314" class="post-120314 topic type-topic status-publish hentry even bbp-parent-forum-63467 user-id-388">
-                        <li class="bbp-topic-title">
-                            <a class="bbp-topic-permalink" href="http://wpsv.se/forum/amne/dolt-inlagg-bara-for-anvandare-hur-gor-man/" title="Dolt inlägg bara för användare, hur gör man?">Dolt inlägg bara för användare, hur gör man?</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-started-by">Startat av: <a href="http://wpsv.se/medlemmar/eke/" title="Visa eke's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/fa5c9f8d0c951e955e9f15c520a4b508?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-388-avatar avatar-14 photo" width="14" height="14" alt="Avatar för eke"></a>&nbsp;<a href="http://wpsv.se/medlemmar/eke/" title="Visa eke's profil" class="bbp-author-name" rel="nofollow">eke</a></span>
-                            </p>
-                        </li>
-                        <li class="bbp-topic-counts"><i class="fa fa-comment"></i><div class="bbp-count-badge">1</div></li>
-                        <li class="bbp-topic-freshness">
-                            <a href="http://wpsv.se/forum/amne/dolt-inlagg-bara-for-anvandare-hur-gor-man/#post-126840" title="Sv: Dolt inlägg bara för användare, hur gör man?">3 månader, 3 veckor sedan</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-freshness-author"><a href="http://wpsv.se/medlemmar/eke/" title="Visa eke's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/fa5c9f8d0c951e955e9f15c520a4b508?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-388-avatar avatar-14 photo" width="14" height="14" alt="Avatar för eke"></a>&nbsp;<a href="http://wpsv.se/medlemmar/eke/" title="Visa eke's profil" class="bbp-author-name" rel="nofollow">eke</a></span>
-                            </p>
-                        </li>
-                    </ul><!-- #topic-120314 -->
-                    <ul id="topic-120368" class="post-120368 topic type-topic status-publish hentry odd bbp-parent-forum-63467 user-id-12781">
-                        <li class="bbp-topic-title">
-                            <a class="bbp-topic-permalink" href="http://wpsv.se/forum/amne/allt-ar-lankat-till-min-hemsida-varfor/" title="Allt är länkat till min hemsida. Varför?">Allt är länkat till min hemsida. Varför?</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-started-by">Startat av: <a href="http://wpsv.se/medlemmar/annsofie/" title="Visa AnnSofie's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/821c45d6da644337ba96338e64456c78?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-12781-avatar avatar-14 photo" width="14" height="14" alt="Avatar för AnnSofie"></a>&nbsp;<a href="http://wpsv.se/medlemmar/annsofie/" title="Visa AnnSofie's profil" class="bbp-author-name" rel="nofollow">AnnSofie</a></span>
-                            </p>
-                        </li>
-                        <li class="bbp-topic-counts"><i class="fa fa-comment"></i><div class="bbp-count-badge">11</div></li>
-                        <li class="bbp-topic-freshness">
-                            <a href="http://wpsv.se/forum/amne/allt-ar-lankat-till-min-hemsida-varfor/#post-126807" title="Sv: Allt är länkat till min hemsida. Varför?">3 månader, 3 veckor sedan</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-freshness-author"><a href="http://wpsv.se/medlemmar/annsofie/" title="Visa AnnSofie's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/821c45d6da644337ba96338e64456c78?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-12781-avatar avatar-14 photo" width="14" height="14" alt="Avatar för AnnSofie"></a>&nbsp;<a href="http://wpsv.se/medlemmar/annsofie/" title="Visa AnnSofie's profil" class="bbp-author-name" rel="nofollow">AnnSofie</a></span>
-                            </p>
-                        </li>
-                    </ul><!-- #topic-120368 -->
-                    <ul id="topic-120365" class="post-120365 topic type-topic status-publish hentry even bbp-parent-forum-63467 user-id-12845">
-                        <li class="bbp-topic-title">
-                            <a class="bbp-topic-permalink" href="http://wpsv.se/forum/amne/liten-kommentarsruta/" title="Liten kommentarsruta?">Liten kommentarsruta?</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-started-by">Startat av: <a href="http://wpsv.se/medlemmar/mudder/" title="Visa mudder's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/de27aad3ad143ace965d2ec5433d1d8f?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-12845-avatar avatar-14 photo" width="14" height="14" alt="Avatar för mudder"></a>&nbsp;<a href="http://wpsv.se/medlemmar/mudder/" title="Visa mudder's profil" class="bbp-author-name" rel="nofollow">mudder</a></span>
-                            </p>
-                        </li>
-                        <li class="bbp-topic-counts"><i class="fa fa-comment"></i><div class="bbp-count-badge">2</div></li>
-                        <li class="bbp-topic-freshness">
-                            <a href="http://wpsv.se/forum/amne/liten-kommentarsruta/#post-126802" title="Sv: Liten kommentarsruta?">3 månader, 3 veckor sedan</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-freshness-author"><a href="http://wpsv.se/medlemmar/mudder/" title="Visa mudder's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/de27aad3ad143ace965d2ec5433d1d8f?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-12845-avatar avatar-14 photo" width="14" height="14" alt="Avatar för mudder"></a>&nbsp;<a href="http://wpsv.se/medlemmar/mudder/" title="Visa mudder's profil" class="bbp-author-name" rel="nofollow">mudder</a></span>
-                            </p>
-                        </li>
-                    </ul><!-- #topic-120365 -->
-                    <ul id="topic-120363" class="post-120363 topic type-topic status-publish hentry odd bbp-parent-forum-63467 user-id-4385">
-                        <li class="bbp-topic-title">
-                            <a class="bbp-topic-permalink" href="http://wpsv.se/forum/amne/robot-txt/" title="Robot txt">Robot txt</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-started-by">Startat av: <a href="http://wpsv.se/medlemmar/saramadeleine/" title="Visa saramadeleine's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/90ae321f9c024c589aa69949fed4aabf?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-4385-avatar avatar-14 photo" width="14" height="14" alt="Avatar för saramadeleine"></a>&nbsp;<a href="http://wpsv.se/medlemmar/saramadeleine/" title="Visa saramadeleine's profil" class="bbp-author-name" rel="nofollow">saramadeleine</a></span>
-                            </p>
-                        </li>
-                        <li class="bbp-topic-counts"><i class="fa fa-comment"></i><div class="bbp-count-badge">214</div></li>
-                        <li class="bbp-topic-freshness">
-                            <a href="http://wpsv.se/forum/amne/robot-txt/#post-126793" title="Sv: Robot txt">3 månader, 3 veckor sedan</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-freshness-author"><a href="http://wpsv.se/medlemmar/saramadeleine/" title="Visa saramadeleine's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/90ae321f9c024c589aa69949fed4aabf?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-4385-avatar avatar-14 photo" width="14" height="14" alt="Avatar för saramadeleine"></a>&nbsp;<a href="http://wpsv.se/medlemmar/saramadeleine/" title="Visa saramadeleine's profil" class="bbp-author-name" rel="nofollow">saramadeleine</a></span>
-                            </p>
-                        </li>
-                    </ul><!-- #topic-120363 -->
-                    <ul id="topic-120358" class="post-120358 topic type-topic status-publish hentry even bbp-parent-forum-63467 user-id-12833">
-                        <li class="bbp-topic-title">
-                            <a class="bbp-topic-permalink" href="http://wpsv.se/forum/amne/sidebarwidgets/" title="Sidebar/widgets">Sidebar/widgets</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-started-by">Startat av: <a href="http://wpsv.se/medlemmar/anne-andersson/" title="Visa Anne-Andersson's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/f54e31cf58a1f30104ebe3bc01e42eb6?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-12833-avatar avatar-14 photo" width="14" height="14" alt="Avatar för Anne-Andersson"></a>&nbsp;<a href="http://wpsv.se/medlemmar/anne-andersson/" title="Visa Anne-Andersson's profil" class="bbp-author-name" rel="nofollow">Anne-Andersson</a></span>
-                            </p>
-                        </li>
-                        <li class="bbp-topic-counts"><i class="fa fa-comment"></i><div class="bbp-count-badge">14</div></li>
-                        <li class="bbp-topic-freshness">
-                            <a href="http://wpsv.se/forum/amne/sidebarwidgets/#post-126787" title="Sv: Sidebar/widgets">3 månader, 3 veckor sedan</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-freshness-author"><a href="http://wpsv.se/medlemmar/alexbangkok/" title="Visa AlexBangkok's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/2f93fad1510ef3b31dbf233a2c2876b5?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-11908-avatar avatar-14 photo" width="14" height="14" alt="Avatar för AlexBangkok"></a>&nbsp;<a href="http://wpsv.se/medlemmar/alexbangkok/" title="Visa AlexBangkok's profil" class="bbp-author-name" rel="nofollow">AlexBangkok</a></span>
-                            </p>
-                        </li>
-                    </ul><!-- #topic-120358 -->
-                    <ul id="topic-120361" class="post-120361 topic type-topic status-publish hentry odd bbp-parent-forum-63467 user-id-12837">
-                        <li class="bbp-topic-title">
-                            <a class="bbp-topic-permalink" href="http://wpsv.se/forum/amne/widget-bara-pa-en-siida/" title="Widget bara på en siida">Widget bara på en siida</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-started-by">Startat av: <a href="http://wpsv.se/medlemmar/hakim/" title="Visa Hakim's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/14645cb015f7679e27e23f9fca78c651?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-12837-avatar avatar-14 photo" width="14" height="14" alt="Avatar för Hakim"></a>&nbsp;<a href="http://wpsv.se/medlemmar/hakim/" title="Visa Hakim's profil" class="bbp-author-name" rel="nofollow">Hakim</a></span>
-                            </p>
-                        </li>
-                        <li class="bbp-topic-counts"><i class="fa fa-comment"></i><div class="bbp-count-badge">1</div></li>
-                        <li class="bbp-topic-freshness">
-                            <a href="http://wpsv.se/forum/amne/widget-bara-pa-en-siida/#post-126783" title="Sv: Widget bara på en siida">3 månader, 3 veckor sedan</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-freshness-author"><a href="http://wpsv.se/medlemmar/alexbangkok/" title="Visa AlexBangkok's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/2f93fad1510ef3b31dbf233a2c2876b5?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-11908-avatar avatar-14 photo" width="14" height="14" alt="Avatar för AlexBangkok"></a>&nbsp;<a href="http://wpsv.se/medlemmar/alexbangkok/" title="Visa AlexBangkok's profil" class="bbp-author-name" rel="nofollow">AlexBangkok</a></span>
-                            </p>
-                        </li>
-                    </ul><!-- #topic-120361 -->
-                    <ul id="topic-120360" class="post-120360 topic type-topic status-publish hentry even bbp-parent-forum-63467 user-id-12661">
-                        <li class="bbp-topic-title">
-                            <a class="bbp-topic-permalink" href="http://wpsv.se/forum/amne/andra-wordpress-address-url/" title="Ändra WordPress Address (URL)?">Ändra WordPress Address (URL)?</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-started-by">Startat av: <a href="http://wpsv.se/medlemmar/titan/" title="Visa titan's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/97e61df4bc03340e86488270429eab06?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-12661-avatar avatar-14 photo" width="14" height="14" alt="Avatar för titan"></a>&nbsp;<a href="http://wpsv.se/medlemmar/titan/" title="Visa titan's profil" class="bbp-author-name" rel="nofollow">titan</a></span>
-                            </p>
-                        </li>
-                        <li class="bbp-topic-counts"><i class="fa fa-comment"></i><div class="bbp-count-badge">2</div></li>
-                        <li class="bbp-topic-freshness">
-                            <a href="http://wpsv.se/forum/amne/andra-wordpress-address-url/#post-126779" title="Sv: Ändra WordPress Address (URL)?">3 månader, 3 veckor sedan</a>
-                            <p class="bbp-topic-meta">
-                                <span class="bbp-topic-freshness-author"><a href="http://wpsv.se/medlemmar/titan/" title="Visa titan's profil" class="bbp-author-avatar" rel="nofollow"><img src="http://gravatar.com/avatar/97e61df4bc03340e86488270429eab06?d=http://wpsv.se/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=14&amp;r=G" class="avatar user-12661-avatar avatar-14 photo" width="14" height="14" alt="Avatar för titan"></a>&nbsp;<a href="http://wpsv.se/medlemmar/titan/" title="Visa titan's profil" class="bbp-author-name" rel="nofollow">titan</a></span>
-                            </p>
-                        </li>
-                    </ul><!-- #topic-120360 -->
-                        </li>
-                        <li class="bbp-footer">
-                            <div class="tr">
-                                <p>
-                                    <span class="td colspan4">&nbsp;</span>
-                                </p>
-                            </div><!-- .tr -->
-                        </li>
-                    </ul>
-                  <!-- End INSERT BBPRESS LATEST FORUM POST LOOP -->
+                <!-- Start LATEST FORUM POSTS -->
+                	<?php echo do_shortcode('[bbp-topic-index]'); ?>    
+                <!-- End LATEST FORUM POSTS -->
                 </div>
+                
                 <div id="latest-forum-sidebar" class="col-md-3">
                   <div class="forum-widget bbp-forum-search">
                   	<h3>Hitta svar</h3>
@@ -400,6 +235,7 @@ get_header(); ?>
                      <!-- End INSERT BBPRESS SEARCH FORM -->
                     </div><!-- /input-group -->
                   </div>
+                  
                   <div class="forum-widget new-bbp-post">
                 	<h3>Ställ en fråga</h3>
                     <p>Behöver du hjälp? Då är vårt forum den perfekta platsen för att be om support. Skapa ett inlägg med din fråga nu&hellip;</p>
@@ -408,35 +244,14 @@ get_header(); ?>
                     <!-- End INSERT BBPRESS NEW POST BUTTON -->
                   </div>
                   
-                  <!-- Start INSERT BBPRESS TAGCLOUD WIDGET -->
+                  <!-- Start BBPRESS TAGCLOUD -->
                   <div class="forum-widget bbp-forum-tagcloud widget_tag_cloud">
                       <h3 class="widgettitle">Populära taggar</h3>
                       <div class="tagcloud">
-                        <div id="tag-cloud">
-                        <a href="http://wpsv.se/forum/amnestagg/admin/" class="tag-link-877 label tag-" title="6 ämnen" style="font-size: 9.75px;">admin</a>
-                        <a href="http://wpsv.se/forum/amnestagg/anvandare/" class="tag-link-745 label tag-" title="7 ämnen" style="font-size: 9.75px;">användare</a>
-                        <a href="http://wpsv.se/forum/amnestagg/bilder/" class="tag-link-726 label tag-" title="12 ämnen" style="font-size: 9.75px;">bilder</a>
-                        <a href="http://wpsv.se/forum/amnestagg/blogg/" class="tag-link-707 label tag-" title="9 ämnen" style="font-size: 9.75px;">blogg</a>
-                        <a href="http://wpsv.se/forum/amnestagg/css/" class="tag-link-739 label tag-" title="8 ämnen" style="font-size: 9.75px;">css</a>
-                        <a href="http://wpsv.se/forum/amnestagg/error/" class="tag-link-865 label tag-" title="6 ämnen" style="font-size: 9.75px;">error</a>
-                        <a href="http://wpsv.se/forum/amnestagg/facebook/" class="tag-link-754 label tag-" title="9 ämnen" style="font-size: 9.75px;">facebook</a>
-                        <a href="http://wpsv.se/forum/amnestagg/galleri/" class="tag-link-1034 label tag-" title="7 ämnen" style="font-size: 9.75px;">galleri</a>
-                        <a href="http://wpsv.se/forum/amnestagg/inloggning/" class="tag-link-734 label tag-" title="11 ämnen" style="font-size: 9.75px;">inloggning</a>
-                        <a href="http://wpsv.se/forum/amnestagg/inlagg/" class="tag-link-727 label tag-" title="14 ämnen" style="font-size: 9.75px;">inlägg</a>
-                        <a href="http://wpsv.se/forum/amnestagg/kommentarer/" class="tag-link-844 label tag-" title="7 ämnen" style="font-size: 9.75px;">kommentarer</a>
-                        <a href="http://wpsv.se/forum/amnestagg/multisite/" class="tag-link-709 label tag-" title="7 ämnen" style="font-size: 9.75px;">multisite</a>
-                        <a href="http://wpsv.se/forum/amnestagg/plugin/" class="tag-link-788 label tag-" title="19 ämnen" style="font-size: 9.75px;">plugin</a>
-                        <a href="http://wpsv.se/forum/amnestagg/problem/" class="tag-link-822 label tag-" title="8 ämnen" style="font-size: 9.75px;">problem</a>
-                        <a href="http://wpsv.se/forum/amnestagg/tema/" class="tag-link-750 label tag-" title="15 ämnen" style="font-size: 9.75px;">tema</a>
-                        <a href="http://wpsv.se/forum/amnestagg/twenty-eleven/" class="tag-link-817 label tag-" title="9 ämnen" style="font-size: 9.75px;">twenty eleven</a>
-                        <a href="http://wpsv.se/forum/amnestagg/widget/" class="tag-link-772 label tag-" title="12 ämnen" style="font-size: 9.75px;">widget</a>
-                        <a href="http://wpsv.se/forum/amnestagg/woocommerce/" class="tag-link-755 label tag-" title="12 ämnen" style="font-size: 9.75px;">woocommerce</a>
-                        <a href="http://wpsv.se/forum/amnestagg/wordpress/" class="tag-link-907 label tag-" title="16 ämnen" style="font-size: 9.75px;">wordpress</a>
-                        <a href="http://wpsv.se/forum/amnestagg/oversattning/" class="tag-link-796 label tag-" title="6 ämnen" style="font-size: 9.75px;">översättning</a>
-                        </div>
+                        <?php echo do_shortcode('[bbp-topic-tags]'); ?> 
                       </div>
                   </div>
-                  <!-- End INSERT BBPRESS TAGCLOUD WIDGET -->
+                  <!-- End BBPRESS TAGCLOUD -->
                 </div>
 			</div>
 		</div>
@@ -447,32 +262,40 @@ get_header(); ?>
 	<section id="statistics" class="section">
 		<div class="container">
 			<div class="row">
-              <!-- Start INSERT BBPRESS STATISTICS -->
-				<div class="col-md-3 col-xs-6">
+              <!-- Start SITEWIDE STATISTICS -->
+                <?php $stats = bbp_get_statistics(); ?>
+				<?php do_action( 'bbp_before_statistics' ); ?>
+				
+                <div class="col-md-3 col-xs-6">                                        
 					<div class="stats">
 						<i class="fa fa-group"></i>
-						<h1>12 000 <span>Medlemmar</span></h1>
+						<h1><?php echo esc_html( $stats['user_count'] ); ?><span>Medlemmar</span></h1>
 					</div>
 				</div>
 				<div class="col-md-3 col-xs-6">
 					<div class="stats">
-						<i class="fa fa-signal color"></i>
-						<h1>56 000 <span>Ämnen</span></h1>
+						<i class="fa fa-thumb-tack"></i>
+						<h1><?php echo esc_html( $stats['topic_count'] ); ?><span>Ämnen</span></h1>
 					</div>
 				</div>
 				<div class="col-md-3 col-xs-6">
 					<div class="stats">
 						<i class="fa fa-comments"></i>
-						<h1>9 211<span>Inlägg</span></h1> 
+						<h1><?php echo esc_html( $stats['reply_count'] ); ?><span>Svar</span></h1> 
 					</div>
 				</div>
+ 
+                <?php do_action( 'bbp_after_statistics' ); ?>
+                
+                <?php unset( $stats ); ?>
+
 				<div class="col-md-3 col-xs-6">
 					<div class="stats">
 						<i class="fa fa-sitemap"></i>
-						<h1>12<span>Grupper</span></h1>
+						<h1><?php echo bp_get_total_group_count(); ?><span>Grupper</span></h1>
 					</div>
 				</div>
-              <!-- End INSERT BBPRESS STATISTICS -->
+              <!-- End SITEWIDE STATISTICS -->
 			</div>
 		</div>
 	</section>
@@ -485,11 +308,144 @@ get_header(); ?>
 				<div class="section-headline">
 					<h2>Aktivitetsflöde</h2>
 					<span>Följ den senaste aktiviteten på <?php bloginfo( 'name' ); ?></span>
-                    <!-- INSERT BUDDYPRESS ACTIVITY FEED -->
 				</div>
 			</div>
 			<div class="row">
+				<?php do_action( 'bp_before_directory_activity' ); ?>
             
+            <div id="buddypress">
+            
+                <?php do_action( 'bp_before_directory_activity_content' ); ?>
+            
+                <?php if ( is_user_logged_in() ) : ?>
+                
+                  <div class="bp-statuses">            
+                    <?php bp_get_template_part( 'activity/post-form' ); ?>
+                  </div>
+            
+                <?php endif; ?>
+            
+                <?php do_action( 'template_notices' ); ?>
+            
+                <div class="item-list-tabs activity-type-tabs" role="navigation">
+                    <ul>
+                        <?php do_action( 'bp_before_activity_type_tab_all' ); ?>
+            
+                        <li class="selected" id="activity-all"><a href="<?php bp_activity_directory_permalink(); ?>" title="<?php _e( 'The public activity for everyone on this site.', 'buddypress' ); ?>"><?php printf( __( 'All Members <span>%s</span>', 'buddypress' ), number_format_i18n( bp_get_total_member_count() ) ); ?></a></li>
+            
+                        <?php if ( is_user_logged_in() ) : ?>
+            
+                            <?php do_action( 'bp_before_activity_type_tab_friends' ); ?>
+            
+                            <?php if ( bp_is_active( 'friends' ) ) : ?>
+            
+                                <?php if ( bp_get_total_friend_count( bp_loggedin_user_id() ) ) : ?>
+            
+                                    <li id="activity-friends"><a href="<?php echo bp_loggedin_user_domain() . bp_get_activity_slug() . '/' . bp_get_friends_slug() . '/'; ?>" title="<?php _e( 'The activity of my friends only.', 'buddypress' ); ?>"><?php printf( __( 'My Friends <span>%s</span>', 'buddypress' ), number_format_i18n( bp_get_total_friend_count( bp_loggedin_user_id() ) ) ); ?></a></li>
+            
+                                <?php endif; ?>
+            
+                            <?php endif; ?>
+            
+                            <?php do_action( 'bp_before_activity_type_tab_groups' ); ?>
+            
+                            <?php if ( bp_is_active( 'groups' ) ) : ?>
+            
+                                <?php if ( bp_get_total_group_count_for_user( bp_loggedin_user_id() ) ) : ?>
+            
+                                    <li id="activity-groups"><a href="<?php echo bp_loggedin_user_domain() . bp_get_activity_slug() . '/' . bp_get_groups_slug() . '/'; ?>" title="<?php _e( 'The activity of groups I am a member of.', 'buddypress' ); ?>"><?php printf( __( 'My Groups <span>%s</span>', 'buddypress' ), number_format_i18n( bp_get_total_group_count_for_user( bp_loggedin_user_id() ) ) ); ?></a></li>
+            
+                                <?php endif; ?>
+            
+                            <?php endif; ?>
+            
+                            <?php do_action( 'bp_before_activity_type_tab_favorites' ); ?>
+            
+                            <?php if ( bp_get_total_favorite_count_for_user( bp_loggedin_user_id() ) ) : ?>
+            
+                                <li id="activity-favorites"><a href="<?php echo bp_loggedin_user_domain() . bp_get_activity_slug() . '/favorites/'; ?>" title="<?php _e( "The activity I've marked as a favorite.", 'buddypress' ); ?>"><?php printf( __( 'My Favorites <span>%s</span>', 'buddypress' ), number_format_i18n( bp_get_total_favorite_count_for_user( bp_loggedin_user_id() ) ) ); ?></a></li>
+            
+                            <?php endif; ?>
+            
+                            <?php if ( bp_activity_do_mentions() ) : ?>
+            
+                                <?php do_action( 'bp_before_activity_type_tab_mentions' ); ?>
+            
+                                <li id="activity-mentions"><a href="<?php echo bp_loggedin_user_domain() . bp_get_activity_slug() . '/mentions/'; ?>" title="<?php _e( 'Activity that I have been mentioned in.', 'buddypress' ); ?>"><?php _e( 'Mentions', 'buddypress' ); ?><?php if ( bp_get_total_mention_count_for_user( bp_loggedin_user_id() ) ) : ?> <strong><span><?php printf( _nx( '%s new', '%s new', bp_get_total_mention_count_for_user( bp_loggedin_user_id() ), 'Number of new activity mentions', 'buddypress' ), number_format_i18n( bp_get_total_mention_count_for_user( bp_loggedin_user_id()  )) ); ?></span></strong><?php endif; ?></a></li>
+            
+                            <?php endif; ?>
+            
+                        <?php endif; ?>
+            
+                        <?php do_action( 'bp_activity_type_tabs' ); ?>
+                    </ul>
+                </div><!-- .item-list-tabs -->
+            
+                <div class="item-list-tabs no-ajax" id="subnav" role="navigation">
+                    <ul>
+                        <li class="feed"><a href="<?php bp_sitewide_activity_feed_link(); ?>" title="<?php _e( 'RSS Feed', 'buddypress' ); ?>"><i class="fa fa-rss-square"></i> <?php _e( 'RSS', 'buddypress' ); ?></a></li>
+            
+                        <?php do_action( 'bp_activity_syndication_options' ); ?>
+            
+                        <li id="activity-filter-select" class="last">
+                            <label for="activity-filter-by"><?php _e( 'Show:', 'buddypress' ); ?></label>
+                            <select id="activity-filter-by" class="form-control">
+                                <option value="-1"><?php _e( 'Everything', 'buddypress' ); ?></option>
+                                <option value="activity_update"><?php _e( 'Updates', 'buddypress' ); ?></option>
+            
+                                <?php if ( bp_is_active( 'blogs' ) ) : ?>
+            
+                                    <option value="new_blog_post"><?php _e( 'Posts', 'buddypress' ); ?></option>
+                                    <option value="new_blog_comment"><?php _e( 'Comments', 'buddypress' ); ?></option>
+            
+                                <?php endif; ?>
+            
+                                <?php if ( bp_is_active( 'forums' ) ) : ?>
+            
+                                    <option value="new_forum_topic"><?php _e( 'Forum Topics', 'buddypress' ); ?></option>
+                                    <option value="new_forum_post"><?php _e( 'Forum Replies', 'buddypress' ); ?></option>
+            
+                                <?php endif; ?>
+            
+                                <?php if ( bp_is_active( 'groups' ) ) : ?>
+            
+                                    <option value="created_group"><?php _e( 'New Groups', 'buddypress' ); ?></option>
+                                    <option value="joined_group"><?php _e( 'Group Memberships', 'buddypress' ); ?></option>
+            
+                                <?php endif; ?>
+            
+                                <?php if ( bp_is_active( 'friends' ) ) : ?>
+            
+                                    <option value="friendship_accepted,friendship_created"><?php _e( 'Friendships', 'buddypress' ); ?></option>
+            
+                                <?php endif; ?>
+            
+                                <option value="new_member"><?php _e( 'New Members', 'buddypress' ); ?></option>
+            
+                                <?php do_action( 'bp_activity_filter_options' ); ?>
+            
+                            </select>
+                        </li>
+                    </ul>
+                </div><!-- .item-list-tabs -->
+            
+                <?php do_action( 'bp_before_directory_activity_list' ); ?>
+            
+                <div class="activity" role="main">
+            
+                    <?php bp_get_template_part( 'activity/activity-loop' ); ?>
+            
+                </div><!-- .activity -->
+            
+                <?php do_action( 'bp_after_directory_activity_list' ); ?>
+            
+                <?php do_action( 'bp_directory_activity_content' ); ?>
+            
+                <?php do_action( 'bp_after_directory_activity_content' ); ?>
+            
+                <?php do_action( 'bp_after_directory_activity' ); ?>
+            
+            </div>
 			</div>
 		</div>
 	</section>
@@ -501,17 +457,22 @@ get_header(); ?>
 			<div class="row">
               <div class="col-md-6">
 				<div class="section-headline">
-					<h2>Våra grupper</h2>
+					<h2>Aktiva grupper</h2>
 					<span>Skapa kontakter via olika grupper inom WordPress</span>
-                    <!-- INSERT BUDDYPRESS ACTIV GROUPS -->
 				</div>
+                <div id="bp-groups">
+                    	<?php bp_get_template_part( 'groups/front' ); ?>
+                </div>
               </div>
               <div class="col-md-6">
 				<div class="section-headline">
 					<h2>Vad skrivs om WordPress?</h2>
 					<span>Få koll på vad som skrivs på andra sidor om WordPress <a href="#">#wpse</a></span>
-                    <!-- INSERT TWITTER FEED FOR #WPSE -->
 				</div>
+                <div id="twitter-feed">
+                    	<a class="twitter-timeline" width="100%" href="https://twitter.com/hashtag/wpse" data-widget-id="497073041344442368" data-chrome="noborders transparent">#wpse Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
               </div>
 			</div>
 			<div class="row">
@@ -527,6 +488,7 @@ get_header(); ?>
 				<div class="section-headline nomargin-bottom white-heading">
 					<h2>Socialt med WordPress</h2>
 					<span>Skapa kontakter socialt med WordPress som gemensam nämnare</span>
+                    
 				</div>
 			</div>
 			<div class="row">

@@ -13,60 +13,68 @@
 
 	<?php do_action( 'bp_before_activity_post_form' ); ?>
 
-	<div id="whats-new-avatar">
-		<a href="<?php echo bp_loggedin_user_domain(); ?>">
-			<?php bp_loggedin_user_avatar( 'width=' . bp_core_avatar_thumb_width() . '&height=' . bp_core_avatar_thumb_height() ); ?>
-		</a>
-	</div>
-	
-	<p class="activity-greeting"><?php if ( bp_is_group() )
-		printf( __( "What's new in %s, %s?", 'buddypress' ), bp_get_group_name(), bp_get_user_firstname() );
-	else
-		printf( __( "What's new, %s?", 'buddypress' ), bp_get_user_firstname() );
-	?></p>
+	<div class="bp-statuses-inner">
+    
+        <div id="whats-new-avatar">
+            <a href="<?php echo bp_loggedin_user_domain(); ?>">
+                <?php bp_loggedin_user_avatar( 'width=' . bp_core_avatar_thumb_width() . '&height=' . bp_core_avatar_thumb_height() ); ?>
+            </a>
+        </div>
+        
+        <p class="activity-greeting"><?php if ( bp_is_group() )
+            printf( __( "What's new in %s, %s?", 'buddypress' ), bp_get_group_name(), bp_get_user_firstname() );
+        else
+            printf( __( "What's new, %s?", 'buddypress' ), bp_get_user_firstname() );
+        ?></p>
+    
+        <div id="whats-new-content">
+            <div id="whats-new-textarea">
+                <textarea name="whats-new" id="whats-new" class="form-control" cols="50" rows="2"><?php if ( isset( $_GET['r'] ) ) : ?>@<?php echo esc_attr( $_GET['r'] ); ?> <?php endif; ?></textarea>
+            </div>
+    
+        </div><!-- #whats-new-content -->
+    
+    </div>
+    
+    <div id="whats-new-options">
+        <div id="whats-new-submit">
+            <input type="submit" name="aw-whats-new-submit" class="btn btn-primary" id="aw-whats-new-submit" value="<?php _e( 'Post Update', 'buddypress' ); ?>" />
+        </div>
 
-	<div id="whats-new-content">
-		<div id="whats-new-textarea">
-			<textarea name="whats-new" id="whats-new" cols="50" rows="10"><?php if ( isset( $_GET['r'] ) ) : ?>@<?php echo esc_attr( $_GET['r'] ); ?> <?php endif; ?></textarea>
-		</div>
+        <?php if ( bp_is_active( 'groups' ) && !bp_is_my_profile() && !bp_is_group() ) : ?>
 
-		<div id="whats-new-options">
-			<div id="whats-new-submit">
-				<input type="submit" name="aw-whats-new-submit" id="aw-whats-new-submit" value="<?php _e( 'Post Update', 'buddypress' ); ?>" />
-			</div>
+            <div id="whats-new-post-in-box">
 
-			<?php if ( bp_is_active( 'groups' ) && !bp_is_my_profile() && !bp_is_group() ) : ?>
+                <div class="input-group">
+				
+				<span class="input-group-addon"><?php _e( 'Post in', 'buddypress' ); ?></span>
 
-				<div id="whats-new-post-in-box">
+                <select id="whats-new-post-in" name="whats-new-post-in" class="form-control">
+                    <option selected="selected" value="0"><?php _e( 'My Profile', 'buddypress' ); ?></option>
 
-					<?php _e( 'Post in', 'buddypress' ); ?>:
+                    <?php if ( bp_has_groups( 'user_id=' . bp_loggedin_user_id() . '&type=alphabetical&max=100&per_page=100&populate_extras=0' ) ) :
+                        while ( bp_groups() ) : bp_the_group(); ?>
 
-					<select id="whats-new-post-in" name="whats-new-post-in">
-						<option selected="selected" value="0"><?php _e( 'My Profile', 'buddypress' ); ?></option>
+                            <option value="<?php bp_group_id(); ?>"><?php bp_group_name(); ?></option>
 
-						<?php if ( bp_has_groups( 'user_id=' . bp_loggedin_user_id() . '&type=alphabetical&max=100&per_page=100&populate_extras=0' ) ) :
-							while ( bp_groups() ) : bp_the_group(); ?>
+                        <?php endwhile;
+                    endif; ?>
 
-								<option value="<?php bp_group_id(); ?>"><?php bp_group_name(); ?></option>
+                </select>
+                </div>
+            </div>
+            <input type="hidden" id="whats-new-post-object" name="whats-new-post-object" value="groups" />
 
-							<?php endwhile;
-						endif; ?>
+        <?php elseif ( bp_is_group_home() ) : ?>
 
-					</select>
-				</div>
-				<input type="hidden" id="whats-new-post-object" name="whats-new-post-object" value="groups" />
+            <input type="hidden" id="whats-new-post-object" name="whats-new-post-object" value="groups" />
+            <input type="hidden" id="whats-new-post-in" name="whats-new-post-in" value="<?php bp_group_id(); ?>" />
 
-			<?php elseif ( bp_is_group_home() ) : ?>
+        <?php endif; ?>
 
-				<input type="hidden" id="whats-new-post-object" name="whats-new-post-object" value="groups" />
-				<input type="hidden" id="whats-new-post-in" name="whats-new-post-in" value="<?php bp_group_id(); ?>" />
+        <?php do_action( 'bp_activity_post_form_options' ); ?>
 
-			<?php endif; ?>
-
-			<?php do_action( 'bp_activity_post_form_options' ); ?>
-
-		</div><!-- #whats-new-options -->
-	</div><!-- #whats-new-content -->
+    </div><!-- #whats-new-options -->
 
 	<?php wp_nonce_field( 'post_update', '_wpnonce_post_update' ); ?>
 	<?php do_action( 'bp_after_activity_post_form' ); ?>

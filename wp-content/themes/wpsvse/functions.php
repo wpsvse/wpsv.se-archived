@@ -42,11 +42,25 @@ function wpsvse_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	/**
+	 * Resizes avatars (buddypress)
+	 */
+	define ( 'BP_AVATAR_THUMB_WIDTH', 128 );
+	define ( 'BP_AVATAR_THUMB_HEIGHT', 128 );
+	define ( 'BP_AVATAR_FULL_WIDTH', 512 );
+	define ( 'BP_AVATAR_FULL_HEIGHT', 512 );
+	define ( 'BP_AVATAR_ORIGINAL_MAX_WIDTH', 512 );
+	define ( 'BP_AVATAR_ORIGINAL_MAX_FILESIZE', 819200 );
+
+	/**
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
 		'primary' => __( 'Huvudmeny', 'wpsvse' ),
+		'footer' => __( 'Sidfot', 'wpsvse' ),
 	) );
+	
+	// Register Custom Navigation Walker
+	require_once('inc/wp_bootstrap_navwalker.php');
 
 }
 endif; // wpsvse_setup
@@ -72,6 +86,15 @@ function wpsvse_widgets_init() {
 		'before_widget' => '<div id="%1$s" class="widget sponsor-link %2$s">',
 		'after_widget'  => '</div>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Grupper', 'wpsvse' ),
+		'id'            => 'group-widget',
+		'description'   => 'Widgetfält på startsidan för aktiva grupper.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<span style="display:none">',
+		'after_title'   => '</span>',
+	) );
 }
 add_action( 'widgets_init', 'wpsvse_widgets_init' );
 
@@ -85,7 +108,7 @@ function wpsvse_scripts() {
 	
 	wp_enqueue_style( 'fontawesome-style', get_template_directory_uri() . '/css/font-awesome.min.css' );
 	
-	wp_enqueue_style( 'bbpress-style', get_template_directory_uri() . '/css/bbpress.css' );
+	// wp_enqueue_style( 'bbpress-style', get_template_directory_uri() . '/css/bbpress.css' );
 	
 	wp_enqueue_style( 'wpsvse-style', get_stylesheet_uri() );
 	

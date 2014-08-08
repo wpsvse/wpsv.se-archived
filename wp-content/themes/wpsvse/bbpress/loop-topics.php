@@ -15,14 +15,14 @@
 
 <ul id="bbp-forum-<?php bbp_forum_id(); ?>" class="bbp-topics">
 
-	<li class="bbp-header">
-
-		<ul class="forum-titles">
-			<li class="bbp-topic-title"><?php the_title(); ?></li>
-		</ul>
-
-	</li>
-
+    <li class="bbp-header">
+        <ul class="forum-titles">
+            <li class="bbp-topic-title">Ämne</li>
+            <li class="bbp-topic-counts">Inlägg</li>
+            <li class="bbp-topic-freshness">Aktivitet</li>
+        </ul>
+    </li>
+                        
 	<li class="bbp-body">
 
 		<?php while ( bbp_topics() ) : bbp_the_topic(); ?>
