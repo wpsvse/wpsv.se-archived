@@ -16,7 +16,7 @@
 		<div class="bbp-username">
 			<p>
 				<label for="user_login" class="hide"><?php _e( 'Username or Email', 'bbpress' ); ?>: </label>
-				<input type="text" name="user_login" value="" size="20" id="user_login" tabindex="<?php bbp_tab_index(); ?>" />
+				<input type="text" name="user_login" value="" size="20" id="user_login" tabindex="<?php bbp_tab_index(); ?>" class="form-control" />
 			</p>
 		</div>
 
@@ -24,7 +24,7 @@
 
 			<?php do_action( 'login_form', 'resetpass' ); ?>
 
-			<button type="submit" tabindex="<?php bbp_tab_index(); ?>" name="user-submit" class="button submit user-submit"><?php _e( 'Reset My Password', 'bbpress' ); ?></button>
+			<button type="submit" tabindex="<?php bbp_tab_index(); ?>" name="user-submit" class="btn btn-primary button submit user-submit"><?php _e( 'Reset My Password', 'bbpress' ); ?></button>
 
 			<?php bbp_user_lost_pass_fields(); ?>
 

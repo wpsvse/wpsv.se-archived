@@ -19,8 +19,6 @@
 
 <?php if ( bbp_is_topic_edit() ) : ?>
 
-	<?php bbp_topic_tag_list( bbp_get_topic_id() ); ?>
-
 	<?php bbp_single_topic_description( array( 'topic_id' => bbp_get_topic_id() ) ); ?>
 
 <?php endif; ?>
@@ -73,7 +71,7 @@
 
 					<p>
 						<label for="bbp_topic_title"><?php printf( __( 'Topic Title (Maximum Length: %d):', 'bbpress' ), bbp_get_title_max_length() ); ?></label><br />
-						<input type="text" id="bbp_topic_title" value="<?php bbp_form_topic_title(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_title" maxlength="<?php bbp_title_max_length(); ?>" />
+						<input type="text" id="bbp_topic_title" value="<?php bbp_form_topic_title(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_title" maxlength="<?php bbp_title_max_length(); ?>" class="form-control" />
 					</p>
 
 					<?php do_action( 'bbp_theme_after_topic_form_title' ); ?>
@@ -110,7 +108,7 @@
 
 						<p>
 							<label for="bbp_topic_tags"><?php _e( 'Topic Tags:', 'bbpress' ); ?></label><br />
-							<input type="text" value="<?php bbp_form_topic_tags(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_tags" id="bbp_topic_tags" <?php disabled( bbp_is_topic_spam() ); ?> />
+							<input type="text" value="<?php bbp_form_topic_tags(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_tags" id="bbp_topic_tags" class="form-control" <?php disabled( bbp_is_topic_spam() ); ?> />
 						</p>
 
 						<?php do_action( 'bbp_theme_after_topic_form_tags' ); ?>
@@ -181,7 +179,7 @@
 
 							<div>
 								<label for="bbp_topic_edit_reason"><?php printf( __( 'Optional reason for editing:', 'bbpress' ), bbp_get_current_user_name() ); ?></label><br />
-								<input type="text" value="<?php bbp_form_topic_edit_reason(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_edit_reason" id="bbp_topic_edit_reason" />
+								<input type="text" value="<?php bbp_form_topic_edit_reason(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_edit_reason" id="bbp_topic_edit_reason" class="form-control" />
 							</div>
 						</fieldset>
 
@@ -195,7 +193,7 @@
 
 						<?php do_action( 'bbp_theme_before_topic_form_submit_button' ); ?>
 
-						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_topic_submit" name="bbp_topic_submit" class="button submit"><?php _e( 'Submit', 'bbpress' ); ?></button>
+						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_topic_submit" name="bbp_topic_submit" class="btn btn-primary button submit"><?php _e( 'Submit', 'bbpress' ); ?></button>
 
 						<?php do_action( 'bbp_theme_after_topic_form_submit_button' ); ?>
 

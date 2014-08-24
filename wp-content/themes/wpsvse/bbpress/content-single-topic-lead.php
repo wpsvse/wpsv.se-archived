@@ -35,7 +35,7 @@
 
 			<div class="bbp-meta">
 
-				<span class="bbp-topic-post-date"><?php bbp_topic_post_date(); ?></span>
+				<span class="bbp-topic-post-date"><i class="fa fa-clock-o"></i> <?php bbp_topic_post_date(); ?></span>
 
 				<a href="<?php bbp_topic_permalink(); ?>" title="<?php bbp_topic_title(); ?>" class="bbp-topic-permalink">#<?php bbp_topic_id(); ?></a>
 

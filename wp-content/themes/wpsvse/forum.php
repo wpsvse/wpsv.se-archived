@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for displaying forum pages.
  *
  * @package WordPress Sverige
  */
@@ -14,7 +14,7 @@ get_header();
 		<div class="container">
 			<div class="row">
               <div class="col-md-12">
-            	<h1 class="page-title"><?php the_title(); ?></h1>
+            	<h1 class="page-title">Forum</h1>
               </div>
             </div>
         </div>
@@ -25,24 +25,15 @@ get_header();
 	<section id="page-full" class="section">
 		<div class="container">
 			<div class="row">
-              <div class="col-md-9">
-              	<?php 
-				the_content(); 
-				
-				wp_link_pages( array(
-					'before' => '<div class="page-links">' . __( 'Sidor:', 'wpsvse' ),
-					'after'  => '</div>',
-				) );
-				
-                edit_post_link( 'Redigera', '<span class="edit-link">', '</span>' );
-				?>
+              <div class="col-md-12">
+                <h2><?php the_title(); ?></h2>
+              	<?php the_content(); ?>
               </div>
-              <?php get_sidebar(); ?>
 			</div>
 		</div>
 	</section>
 	<!-- End Page Content -->
 
-	<?php endwhile; // end of the loop. ?>
+	<?php endwhile; // end of the loop.
     
-<?php get_footer(); ?>
+get_footer(); ?>

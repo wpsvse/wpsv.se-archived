@@ -19,8 +19,6 @@
 
 	<?php else : ?>
 
-		<?php bbp_topic_tag_list(); ?>
-
 		<?php bbp_single_topic_description(); ?>
 
 		<?php if ( bbp_show_lead_topic() ) : ?>
@@ -38,6 +36,8 @@
 			<?php bbp_get_template_part( 'pagination', 'replies' ); ?>
 
 		<?php endif; ?>
+        
+        <?php bbp_topic_tag_list(); ?>
 
 		<?php bbp_get_template_part( 'form', 'reply' ); ?>
 

@@ -32,39 +32,33 @@ get_header(); ?>
         <!-- End welcome -->
         <!-- Start Slider -->
         <section id="header-slider" class="section carousel slide col-md-5 hidden-xs">
-        <!-- Start Slider Navigation -->
-        <ol class="carousel-indicators">
-            <li class="active" data-slide-to="0" data-target="#header-slider"></li>
-            <li data-slide-to="1" data-target="#header-slider"></li>
-        </ol>
-        <!-- End Slider Navigation -->
-        <div class="carousel-inner">
-          <!-- Start SLIDER -->
-		  <?php // WP_Query arguments
-          $slider_args = array (
-		  		'posts_per_page' 	=> '3',
-		  		'post_type' 		=> 'wpsvse_slider' 
-		  );
-          
-          // The Query
-          $slider_query = new WP_Query( $slider_args );
-          
-          // The Loop
-          if ( $slider_query->have_posts() ) {
-              while ( $slider_query->have_posts() ) {
-                  $slider_query->the_post(); ?>
-
-              <div class="item row">
-              	  <?php the_content(); ?>
-              </div>
-
-          <?php }
-          }
-          
-          // Restore original Post Data
-          wp_reset_postdata(); ?>
-          <!-- End SLIDER -->
-        </div>
+            <div class="slide-inner">
+              <!-- Start SLIDER LOOP -->
+              <?php // WP_Query arguments
+              $slider_args = array (
+                    'posts_per_page' 	=> '3',
+                    'post_type' 		=> 'wpsvse_slider' 
+              );
+              
+              // The Query
+              $slider_query = new WP_Query( $slider_args );
+              
+              // The Loop
+              if ( $slider_query->have_posts() ) {
+                  while ( $slider_query->have_posts() ) {
+                      $slider_query->the_post(); ?>
+    
+                  <div class="item row">
+                      <?php the_content(); ?>
+                  </div>
+    
+              <?php }
+              }
+              
+              // Restore original Post Data
+              wp_reset_postdata(); ?>
+              <!-- End SLIDER LOOP -->
+            </div>
         </section>
       </section>
     </div>
@@ -240,7 +234,7 @@ get_header(); ?>
                 	<h3>Ställ en fråga</h3>
                     <p>Behöver du hjälp? Då är vårt forum den perfekta platsen för att be om support. Skapa ett inlägg med din fråga nu&hellip;</p>
                     <!-- Start INSERT BBPRESS NEW POST BUTTON -->
-                    <button type="button" class="btn btn-dark btn-bbp-new-post"><i class="fa fa-plus-square"></i> Nytt inlägg</button>
+                    <button type="button" class="btn btn-dark btn-bbp-new-post"><i class="fa fa-plus-square"></i> Nytt ämne</button>
                     <!-- End INSERT BBPRESS NEW POST BUTTON -->
                   </div>
                   
@@ -311,141 +305,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="row">
-				<?php do_action( 'bp_before_directory_activity' ); ?>
-            
-            <div id="buddypress">
-            
-                <?php do_action( 'bp_before_directory_activity_content' ); ?>
-            
-                <?php if ( is_user_logged_in() ) : ?>
-                
-                  <div class="bp-statuses">            
-                    <?php bp_get_template_part( 'activity/post-form' ); ?>
-                  </div>
-            
-                <?php endif; ?>
-            
-                <?php do_action( 'template_notices' ); ?>
-            
-                <div class="item-list-tabs activity-type-tabs" role="navigation">
-                    <ul>
-                        <?php do_action( 'bp_before_activity_type_tab_all' ); ?>
-            
-                        <li class="selected" id="activity-all"><a href="<?php bp_activity_directory_permalink(); ?>" title="<?php _e( 'The public activity for everyone on this site.', 'buddypress' ); ?>"><?php printf( __( 'All Members <span>%s</span>', 'buddypress' ), number_format_i18n( bp_get_total_member_count() ) ); ?></a></li>
-            
-                        <?php if ( is_user_logged_in() ) : ?>
-            
-                            <?php do_action( 'bp_before_activity_type_tab_friends' ); ?>
-            
-                            <?php if ( bp_is_active( 'friends' ) ) : ?>
-            
-                                <?php if ( bp_get_total_friend_count( bp_loggedin_user_id() ) ) : ?>
-            
-                                    <li id="activity-friends"><a href="<?php echo bp_loggedin_user_domain() . bp_get_activity_slug() . '/' . bp_get_friends_slug() . '/'; ?>" title="<?php _e( 'The activity of my friends only.', 'buddypress' ); ?>"><?php printf( __( 'My Friends <span>%s</span>', 'buddypress' ), number_format_i18n( bp_get_total_friend_count( bp_loggedin_user_id() ) ) ); ?></a></li>
-            
-                                <?php endif; ?>
-            
-                            <?php endif; ?>
-            
-                            <?php do_action( 'bp_before_activity_type_tab_groups' ); ?>
-            
-                            <?php if ( bp_is_active( 'groups' ) ) : ?>
-            
-                                <?php if ( bp_get_total_group_count_for_user( bp_loggedin_user_id() ) ) : ?>
-            
-                                    <li id="activity-groups"><a href="<?php echo bp_loggedin_user_domain() . bp_get_activity_slug() . '/' . bp_get_groups_slug() . '/'; ?>" title="<?php _e( 'The activity of groups I am a member of.', 'buddypress' ); ?>"><?php printf( __( 'My Groups <span>%s</span>', 'buddypress' ), number_format_i18n( bp_get_total_group_count_for_user( bp_loggedin_user_id() ) ) ); ?></a></li>
-            
-                                <?php endif; ?>
-            
-                            <?php endif; ?>
-            
-                            <?php do_action( 'bp_before_activity_type_tab_favorites' ); ?>
-            
-                            <?php if ( bp_get_total_favorite_count_for_user( bp_loggedin_user_id() ) ) : ?>
-            
-                                <li id="activity-favorites"><a href="<?php echo bp_loggedin_user_domain() . bp_get_activity_slug() . '/favorites/'; ?>" title="<?php _e( "The activity I've marked as a favorite.", 'buddypress' ); ?>"><?php printf( __( 'My Favorites <span>%s</span>', 'buddypress' ), number_format_i18n( bp_get_total_favorite_count_for_user( bp_loggedin_user_id() ) ) ); ?></a></li>
-            
-                            <?php endif; ?>
-            
-                            <?php if ( bp_activity_do_mentions() ) : ?>
-            
-                                <?php do_action( 'bp_before_activity_type_tab_mentions' ); ?>
-            
-                                <li id="activity-mentions"><a href="<?php echo bp_loggedin_user_domain() . bp_get_activity_slug() . '/mentions/'; ?>" title="<?php _e( 'Activity that I have been mentioned in.', 'buddypress' ); ?>"><?php _e( 'Mentions', 'buddypress' ); ?><?php if ( bp_get_total_mention_count_for_user( bp_loggedin_user_id() ) ) : ?> <strong><span><?php printf( _nx( '%s new', '%s new', bp_get_total_mention_count_for_user( bp_loggedin_user_id() ), 'Number of new activity mentions', 'buddypress' ), number_format_i18n( bp_get_total_mention_count_for_user( bp_loggedin_user_id()  )) ); ?></span></strong><?php endif; ?></a></li>
-            
-                            <?php endif; ?>
-            
-                        <?php endif; ?>
-            
-                        <?php do_action( 'bp_activity_type_tabs' ); ?>
-                    </ul>
-                </div><!-- .item-list-tabs -->
-            
-                <div class="item-list-tabs no-ajax" id="subnav" role="navigation">
-                    <ul>
-                        <li class="feed"><a href="<?php bp_sitewide_activity_feed_link(); ?>" title="<?php _e( 'RSS Feed', 'buddypress' ); ?>"><i class="fa fa-rss-square"></i> <?php _e( 'RSS', 'buddypress' ); ?></a></li>
-            
-                        <?php do_action( 'bp_activity_syndication_options' ); ?>
-            
-                        <li id="activity-filter-select" class="last">
-                            <label for="activity-filter-by"><?php _e( 'Show:', 'buddypress' ); ?></label>
-                            <select id="activity-filter-by" class="form-control">
-                                <option value="-1"><?php _e( 'Everything', 'buddypress' ); ?></option>
-                                <option value="activity_update"><?php _e( 'Updates', 'buddypress' ); ?></option>
-            
-                                <?php if ( bp_is_active( 'blogs' ) ) : ?>
-            
-                                    <option value="new_blog_post"><?php _e( 'Posts', 'buddypress' ); ?></option>
-                                    <option value="new_blog_comment"><?php _e( 'Comments', 'buddypress' ); ?></option>
-            
-                                <?php endif; ?>
-            
-                                <?php if ( bp_is_active( 'forums' ) ) : ?>
-            
-                                    <option value="new_forum_topic"><?php _e( 'Forum Topics', 'buddypress' ); ?></option>
-                                    <option value="new_forum_post"><?php _e( 'Forum Replies', 'buddypress' ); ?></option>
-            
-                                <?php endif; ?>
-            
-                                <?php if ( bp_is_active( 'groups' ) ) : ?>
-            
-                                    <option value="created_group"><?php _e( 'New Groups', 'buddypress' ); ?></option>
-                                    <option value="joined_group"><?php _e( 'Group Memberships', 'buddypress' ); ?></option>
-            
-                                <?php endif; ?>
-            
-                                <?php if ( bp_is_active( 'friends' ) ) : ?>
-            
-                                    <option value="friendship_accepted,friendship_created"><?php _e( 'Friendships', 'buddypress' ); ?></option>
-            
-                                <?php endif; ?>
-            
-                                <option value="new_member"><?php _e( 'New Members', 'buddypress' ); ?></option>
-            
-                                <?php do_action( 'bp_activity_filter_options' ); ?>
-            
-                            </select>
-                        </li>
-                    </ul>
-                </div><!-- .item-list-tabs -->
-            
-                <?php do_action( 'bp_before_directory_activity_list' ); ?>
-            
-                <div class="activity" role="main">
-            
-                    <?php bp_get_template_part( 'activity/activity-loop' ); ?>
-            
-                </div><!-- .activity -->
-            
-                <?php do_action( 'bp_after_directory_activity_list' ); ?>
-            
-                <?php do_action( 'bp_directory_activity_content' ); ?>
-            
-                <?php do_action( 'bp_after_directory_activity_content' ); ?>
-            
-                <?php do_action( 'bp_after_directory_activity' ); ?>
-            
-            </div>
+				<?php bp_get_template_part( 'activity/front' ); ?>
 			</div>
 		</div>
 	</section>
@@ -464,52 +324,31 @@ get_header(); ?>
                     	<?php bp_get_template_part( 'groups/front' ); ?>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 twitter-container">
 				<div class="section-headline">
-					<h2>Vad skrivs om WordPress?</h2>
-					<span>Få koll på vad som skrivs på andra sidor om WordPress <a href="#">#wpse</a></span>
+					<h2>Socialt med WordPress?</h2>
+					<span>Få koll på vad som skrivs om WordPress <a href="https://twitter.com/hashtag/wpse?src=hash">#wpse</a></span>
 				</div>
-                <div id="twitter-feed">
-                    	<a class="twitter-timeline" width="100%" href="https://twitter.com/hashtag/wpse" data-widget-id="497073041344442368" data-chrome="noborders transparent">#wpse Tweets</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="active"><a href="#wpsvse-twitter" role="tab" data-toggle="tab">@WPSverige</a></li>
+                  <li><a href="#wpse-twitter" role="tab" data-toggle="tab">#wpse</a></li>
+                </ul>
+                
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane text-center active" id="wpsvse-twitter">
+                  	<a class="twitter-timeline" width="100%" href="https://twitter.com/WPSverige" data-widget-id="498245749222543361" data-chrome="noborders transparent noscrollbar" data-tweet-limit="5">Tweets by @WPSverige</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                  </div>
+                  <div class="tab-pane text-center" id="wpse-twitter">
+                  	<a class="twitter-timeline" width="100%" href="https://twitter.com/hashtag/wpse" data-widget-id="498246358826897408" data-chrome="noborders transparent noscrollbar" data-tweet-limit="5">#wpse Tweets</a>
+                  </div>
                 </div>
               </div>
-			</div>
-			<div class="row">
 			</div>
 		</div>
 	</section>
 	<!-- End Other -->
 	
-	<!-- Start Social Media -->
-	<section id="social-media" class="section">
-		<div class="container">
-			<div class="row">
-				<div class="section-headline nomargin-bottom white-heading">
-					<h2>Socialt med WordPress</h2>
-					<span>Skapa kontakter socialt med WordPress som gemensam nämnare</span>
-                    
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<div class="form-container">
-                      <!-- Start INSERT TWITTER @WPSVERIGE -->
-						<p>
-							WordPress Sverige på Twitter - @WPSverige
-						</p>
-                      <!-- End INSERT TWITTER @WPSVERIGE -->
-					</div>
-					<ul class="social">
-                     <!-- Start INSERT SOCIAL NETWORK ICONS -->
-                      <li><a href="#"><i class="fa fa-facebook facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter twitter"></i></a></li>
-                     <!-- End INSERT SOCIAL NETWORK ICONS -->
-					</ul>
-				</div>
-			</div>		
-		</div>
-	</section>
-	<!-- End Social Media -->
-
 <?php get_footer(); ?>

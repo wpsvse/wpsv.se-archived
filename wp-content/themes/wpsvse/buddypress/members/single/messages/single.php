@@ -94,12 +94,12 @@
 
 					<?php do_action( 'bp_before_message_reply_box' ); ?>
 
-					<textarea name="content" id="message_content" rows="15" cols="40"></textarea>
+					<textarea name="content" id="message_content" class="form-control" rows="15" cols="40"></textarea>
 
 					<?php do_action( 'bp_after_message_reply_box' ); ?>
 
 					<div class="submit">
-						<input type="submit" name="send" value="<?php _e( 'Send Reply', 'buddypress' ); ?>" id="send_reply_button"/>
+						<input type="submit" name="send" value="<?php _e( 'Send Reply', 'buddypress' ); ?>" id="send_reply_button" class="btn btn-primary"/>
 					</div>
 
 					<input type="hidden" id="thread_id" name="thread_id" value="<?php bp_the_thread_id(); ?>" />

@@ -76,8 +76,8 @@ function wpsvse_widgets_init() {
 		'description'   => 'Allmänt widgetfält för sidopaneler.',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Huvudsponsor', 'wpsvse' ),
@@ -85,15 +85,6 @@ function wpsvse_widgets_init() {
 		'description'   => 'Widgetfält på startsidan för huvudsponsor.',
 		'before_widget' => '<div id="%1$s" class="widget sponsor-link %2$s">',
 		'after_widget'  => '</div>',
-	) );
-	register_sidebar( array(
-		'name'          => __( 'Grupper', 'wpsvse' ),
-		'id'            => 'group-widget',
-		'description'   => 'Widgetfält på startsidan för aktiva grupper.',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<span style="display:none">',
-		'after_title'   => '</span>',
 	) );
 }
 add_action( 'widgets_init', 'wpsvse_widgets_init' );
@@ -120,7 +111,7 @@ function wpsvse_scripts() {
 	wp_enqueue_script( 'HTML5shiv', get_template_directory_uri() . '/js/html5shiv.js', array('jquery'), '3.7.0' );
 	
 	wp_enqueue_script( 'respond_js', get_template_directory_uri() . '/js/respond.min.js', array('jquery'), '1.3.0' );
-
+	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

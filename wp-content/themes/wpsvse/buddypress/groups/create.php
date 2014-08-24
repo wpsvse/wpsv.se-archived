@@ -27,12 +27,12 @@
 
 				<div>
 					<label for="group-name"><?php _e( 'Group Name (required)', 'buddypress' ); ?></label>
-					<input type="text" name="group-name" id="group-name" aria-required="true" value="<?php bp_new_group_name(); ?>" />
+					<input type="text" name="group-name" id="group-name" aria-required="true" value="<?php bp_new_group_name(); ?>" class="form-control" />
 				</div>
 
 				<div>
 					<label for="group-desc"><?php _e( 'Group Description (required)', 'buddypress' ); ?></label>
-					<textarea name="group-desc" id="group-desc" aria-required="true"><?php bp_new_group_description(); ?></textarea>
+					<textarea name="group-desc" id="group-desc" aria-required="true" class="form-control"><?php bp_new_group_description(); ?></textarea>
 				</div>
 
 				<?php
@@ -143,7 +143,7 @@
 
 						<p>
 							<input type="file" name="file" id="file" />
-							<input type="submit" name="upload" id="upload" value="<?php _e( 'Upload Image', 'buddypress' ); ?>" />
+							<input type="submit" name="upload" id="upload" class="btn btn-primary" value="<?php _e( 'Upload Image', 'buddypress' ); ?>" />
 							<input type="hidden" name="action" id="action" value="bp_avatar_upload" />
 						</p>
 
@@ -162,7 +162,7 @@
 						<img src="<?php bp_avatar_to_crop(); ?>" id="avatar-crop-preview" class="avatar" alt="<?php _e( 'Avatar preview', 'buddypress' ); ?>" />
 					</div>
 
-					<input type="submit" name="avatar-crop-submit" id="avatar-crop-submit" value="<?php _e( 'Crop Image', 'buddypress' ); ?>" />
+					<input type="submit" name="avatar-crop-submit" id="avatar-crop-submit" class="btn btn-primary" value="<?php _e( 'Crop Image', 'buddypress' ); ?>" />
 
 					<input type="hidden" name="image_src" id="image_src" value="<?php bp_avatar_to_crop_src(); ?>" />
 					<input type="hidden" name="upload" id="upload" />
@@ -258,28 +258,28 @@
 					<?php /* Previous Button */ ?>
 					<?php if ( !bp_is_first_group_creation_step() ) : ?>
 
-						<input type="button" value="<?php _e( 'Back to Previous Step', 'buddypress' ); ?>" id="group-creation-previous" name="previous" onclick="location.href='<?php bp_group_creation_previous_link(); ?>'" />
+						<input type="button" value="<?php _e( 'Back to Previous Step', 'buddypress' ); ?>" id="group-creation-previous" class="btn btn-primary" name="previous" onclick="location.href='<?php bp_group_creation_previous_link(); ?>'" />
 
 					<?php endif; ?>
 
 					<?php /* Next Button */ ?>
 					<?php if ( !bp_is_last_group_creation_step() && !bp_is_first_group_creation_step() ) : ?>
 
-						<input type="submit" value="<?php _e( 'Next Step', 'buddypress' ); ?>" id="group-creation-next" name="save" />
+						<input type="submit" value="<?php _e( 'Next Step', 'buddypress' ); ?>" id="group-creation-next" class="btn btn-primary" name="save" />
 
 					<?php endif;?>
 
 					<?php /* Create Button */ ?>
 					<?php if ( bp_is_first_group_creation_step() ) : ?>
 
-						<input type="submit" value="<?php _e( 'Create Group and Continue', 'buddypress' ); ?>" id="group-creation-create" name="save" />
+						<input type="submit" value="<?php _e( 'Create Group and Continue', 'buddypress' ); ?>" id="group-creation-create" class="btn btn-primary" name="save" />
 
 					<?php endif; ?>
 
 					<?php /* Finish Button */ ?>
 					<?php if ( bp_is_last_group_creation_step() ) : ?>
 
-						<input type="submit" value="<?php _e( 'Finish', 'buddypress' ); ?>" id="group-creation-finish" name="save" />
+						<input type="submit" value="<?php _e( 'Finish', 'buddypress' ); ?>" id="group-creation-finish" class="btn btn-primary" name="save" />
 
 					<?php endif; ?>
 				</div>

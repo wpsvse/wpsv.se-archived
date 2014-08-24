@@ -6,7 +6,7 @@
 	<ul class="first acfb-holder">
 		<li>
 			<?php bp_message_get_recipient_tabs(); ?>
-			<input type="text" name="send-to-input" class="send-to-input" id="send-to-input" />
+			<input type="text" name="send-to-input" class="send-to-input form-control" id="send-to-input" />
 		</li>
 	</ul>
 
@@ -15,17 +15,17 @@
 	<?php endif; ?>
 
 	<label for="subject"><?php _e( 'Subject', 'buddypress' ); ?></label>
-	<input type="text" name="subject" id="subject" value="<?php bp_messages_subject_value(); ?>" />
+	<input type="text" name="subject" id="subject" class="form-control" value="<?php bp_messages_subject_value(); ?>" />
 
 	<label for="content"><?php _e( 'Message', 'buddypress' ); ?></label>
-	<textarea name="content" id="message_content" rows="15" cols="40"><?php bp_messages_content_value(); ?></textarea>
+	<textarea name="content" id="message_content" class="form-control" rows="15" cols="40"><?php bp_messages_content_value(); ?></textarea>
 
 	<input type="hidden" name="send_to_usernames" id="send-to-usernames" value="<?php bp_message_get_recipient_usernames(); ?>" class="<?php bp_message_get_recipient_usernames(); ?>" />
 
 	<?php do_action( 'bp_after_messages_compose_content' ); ?>
 
 	<div class="submit">
-		<input type="submit" value="<?php _e( "Send Message", 'buddypress' ); ?>" name="send" id="send" />
+		<input type="submit" value="<?php _e( "Send Message", 'buddypress' ); ?>" name="send" id="send" class="btn btn-primary" />
 	</div>
 
 	<?php wp_nonce_field( 'messages_send_message' ); ?>

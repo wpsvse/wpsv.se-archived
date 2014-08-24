@@ -14,10 +14,10 @@
 	<?php do_action( 'bp_before_group_details_admin' ); ?>
 
 	<label for="group-name"><?php _e( 'Group Name (required)', 'buddypress' ); ?></label>
-	<input type="text" name="group-name" id="group-name" value="<?php bp_group_name(); ?>" aria-required="true" />
+	<input type="text" name="group-name" id="group-name" class="form-control" value="<?php bp_group_name(); ?>" aria-required="true" />
 
 	<label for="group-desc"><?php _e( 'Group Description (required)', 'buddypress' ); ?></label>
-	<textarea name="group-desc" id="group-desc" aria-required="true"><?php bp_group_description_editable(); ?></textarea>
+	<textarea name="group-desc" id="group-desc" aria-required="true" class="form-control"><?php bp_group_description_editable(); ?></textarea>
 
 	<?php do_action( 'groups_custom_group_fields_editable' ); ?>
 
@@ -29,7 +29,7 @@
 
 	<?php do_action( 'bp_after_group_details_admin' ); ?>
 
-	<p><input type="submit" value="<?php _e( 'Save Changes', 'buddypress' ); ?>" id="save" name="save" /></p>
+	<p><input type="submit" value="<?php _e( 'Save Changes', 'buddypress' ); ?>" id="save" class="btn btn-primary" name="save" /></p>
 	<?php wp_nonce_field( 'groups_edit_group_details' ); ?>
 
 <?php endif; ?>
@@ -114,7 +114,7 @@
 
 	<?php do_action( 'bp_after_group_settings_admin' ); ?>
 
-	<p><input type="submit" value="<?php _e( 'Save Changes', 'buddypress' ); ?>" id="save" name="save" /></p>
+	<p><input type="submit" value="<?php _e( 'Save Changes', 'buddypress' ); ?>" id="save" class="btn btn-primary" name="save" /></p>
 	<?php wp_nonce_field( 'groups_edit_group_settings' ); ?>
 
 <?php endif; ?>
@@ -128,7 +128,7 @@
 
 			<p>
 				<input type="file" name="file" id="file" />
-				<input type="submit" name="upload" id="upload" value="<?php _e( 'Upload Image', 'buddypress' ); ?>" />
+				<input type="submit" name="upload" id="upload" class="btn btn-primary" value="<?php _e( 'Upload Image', 'buddypress' ); ?>" />
 				<input type="hidden" name="action" id="action" value="bp_avatar_upload" />
 			</p>
 
@@ -154,7 +154,7 @@
 			<img src="<?php bp_avatar_to_crop(); ?>" id="avatar-crop-preview" class="avatar" alt="<?php _e( 'Avatar preview', 'buddypress' ); ?>" />
 		</div>
 
-		<input type="submit" name="avatar-crop-submit" id="avatar-crop-submit" value="<?php _e( 'Crop Image', 'buddypress' ); ?>" />
+		<input type="submit" name="avatar-crop-submit" id="avatar-crop-submit" class="btn btn-primary" value="<?php _e( 'Crop Image', 'buddypress' ); ?>" />
 
 		<input type="hidden" name="image_src" id="image_src" value="<?php bp_avatar_to_crop_src(); ?>" />
 		<input type="hidden" id="x" name="x" />
@@ -357,7 +357,7 @@
 	<?php do_action( 'bp_after_group_delete_admin' ); ?>
 
 	<div class="submit">
-		<input type="submit" disabled="disabled" value="<?php _e( 'Delete Group', 'buddypress' ); ?>" id="delete-group-button" name="delete-group-button" />
+		<input type="submit" disabled="disabled" value="<?php _e( 'Delete Group', 'buddypress' ); ?>" class="btn btn-primary" id="delete-group-button" name="delete-group-button" />
 	</div>
 
 	<?php wp_nonce_field( 'groups_delete_group' ); ?>

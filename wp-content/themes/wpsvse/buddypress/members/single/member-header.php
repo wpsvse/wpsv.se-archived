@@ -62,4 +62,4 @@
 
 <?php do_action( 'bp_after_member_header' ); ?>
 
-<?php do_action( 'template_notices' ); ?>
+<div id="message-outer"><?php do_action( 'template_notices' ); ?></div>

@@ -10,7 +10,7 @@
 	</label>
 
 	<div class="submit">
-		<input type="submit" value="<?php _e( 'Save', 'buddypress' ); ?>" id="capabilities-submit" name="capabilities-submit" />
+		<input type="submit" value="<?php _e( 'Save', 'buddypress' ); ?>" id="capabilities-submit" name="capabilities-submit" class="btn btn-primary" />
 	</div>
 
 	<?php do_action( 'bp_members_capabilities_account_after_submit' ); ?>

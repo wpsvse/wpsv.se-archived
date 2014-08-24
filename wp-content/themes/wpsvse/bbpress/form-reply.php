@@ -58,7 +58,7 @@
 
 						<p>
 							<label for="bbp_reply_content"><?php _e( 'Reply:', 'bbpress' ); ?></label><br />
-							<textarea id="bbp_reply_content" tabindex="<?php bbp_tab_index(); ?>" name="bbp_reply_content" rows="6"><?php bbp_form_reply_content(); ?></textarea>
+							<textarea id="bbp_reply_content" tabindex="<?php bbp_tab_index(); ?>" name="bbp_reply_content" rows="6" class="form-control"><?php bbp_form_reply_content(); ?></textarea>
 						</p>
 
 					<?php else : ?>
@@ -84,7 +84,7 @@
 
 						<p>
 							<label for="bbp_topic_tags"><?php _e( 'Tags:', 'bbpress' ); ?></label><br />
-							<input type="text" value="<?php bbp_form_topic_tags(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_tags" id="bbp_topic_tags" <?php disabled( bbp_is_topic_spam() ); ?> />
+							<input type="text" value="<?php bbp_form_topic_tags(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_tags" id="bbp_topic_tags" class="form-control" <?php disabled( bbp_is_topic_spam() ); ?> />
 						</p>
 
 						<?php do_action( 'bbp_theme_after_reply_form_tags' ); ?>
@@ -128,7 +128,7 @@
 
 							<div>
 								<label for="bbp_reply_edit_reason"><?php printf( __( 'Optional reason for editing:', 'bbpress' ), bbp_get_current_user_name() ); ?></label><br />
-								<input type="text" value="<?php bbp_form_reply_edit_reason(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_reply_edit_reason" id="bbp_reply_edit_reason" />
+								<input type="text" value="<?php bbp_form_reply_edit_reason(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_reply_edit_reason" id="bbp_reply_edit_reason" class="form-control" />
 							</div>
 						</fieldset>
 
@@ -146,7 +146,7 @@
 
 						<?php do_action( 'bbp_theme_before_reply_form_submit_button' ); ?>
 
-						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_reply_submit" name="bbp_reply_submit" class="button submit"><?php _e( 'Submit', 'bbpress' ); ?></button>
+						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_reply_submit" name="bbp_reply_submit" class="btn btn-primary button submit"><?php _e( 'Submit', 'bbpress' ); ?></button>
 
 						<?php do_action( 'bbp_theme_after_reply_form_submit_button' ); ?>
 

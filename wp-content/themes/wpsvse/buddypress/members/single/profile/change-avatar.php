@@ -15,7 +15,7 @@
 
 			<p id="avatar-upload">
 				<input type="file" name="file" id="file" />
-				<input type="submit" name="upload" id="upload" value="<?php _e( 'Upload Image', 'buddypress' ); ?>" />
+				<input type="submit" name="upload" id="upload" class="btn btn-primary" value="<?php _e( 'Upload Image', 'buddypress' ); ?>" />
 				<input type="hidden" name="action" id="action" value="bp_avatar_upload" />
 			</p>
 
@@ -36,7 +36,7 @@
 				<img src="<?php bp_avatar_to_crop(); ?>" id="avatar-crop-preview" class="avatar" alt="<?php _e( 'Avatar preview', 'buddypress' ); ?>" />
 			</div>
 
-			<input type="submit" name="avatar-crop-submit" id="avatar-crop-submit" value="<?php _e( 'Crop Image', 'buddypress' ); ?>" />
+			<input type="submit" name="avatar-crop-submit" id="avatar-crop-submit" class="btn btn-primary" value="<?php _e( 'Crop Image', 'buddypress' ); ?>" />
 
 			<input type="hidden" name="image_src" id="image_src" value="<?php bp_avatar_to_crop_src(); ?>" />
 			<input type="hidden" id="x" name="x" />
