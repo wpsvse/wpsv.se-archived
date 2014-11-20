@@ -98,7 +98,7 @@ get_header(); ?>
                     <div class="col-md-4 article-item">
                         <article>
                           <div class="news-meta">
-                              <div class="news-comments"><?php comments_number( '0 kommentarer', '1 kommentar', '% kommentarer' ); ?></div>
+                          	  <div class="comments-meta"><?php comments_popup_link('0 kommentarer', '1 kommentar', '% kommentarer'); ?></div>
                               <time datetime="<?php the_time('c'); ?>"><?php the_time('l, j F'); ?></time>
                               <a href="<?php the_permalink() ?>" title="Direktlänk till <?php the_title_attribute(); ?>" class="img-overlay">
 							  <?php if ( has_post_thumbnail() ) {	
@@ -110,7 +110,7 @@ get_header(); ?>
                           </div>
                           <div class="news-title-frame">
                               <h3><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-                              <div class="news-category">Postat under <span class="news-category"><?php the_category(', '); ?></span></div>
+                              <div class="category-meta">Postat under <?php the_category(', '); ?></div>
                           </div>
                         </article>
                     </div>
@@ -160,8 +160,8 @@ get_header(); ?>
               <!-- Start BLOG LOOP -->
               <?php // WP_Query arguments
               $args = array (
-                  'post_type'              => 'wpsvse_blog',
-                  'posts_per_page'         => '4',
+                  'post_type'		=> 'wpsvse_blog',
+                  'posts_per_page'	=> '4',
               );
               
               // The Query

@@ -575,7 +575,7 @@ class BBP_Default extends BBP_Theme_Compat {
 				$output = "<div class='last-posted-topic-title'>";
 				$output .= "<a href='". bbp_get_forum_last_topic_permalink( $subforum_id ) ."'>" . bbp_get_topic_last_reply_title( bbp_get_forum_last_active_id( $subforum_id ) ) . "</a>";
 				$output .= "</div>";
-				$output .= "<div class='last-posted-topic-user'>by ";
+				$output .= "<div class='last-posted-topic-user'>av ";
 					$author_id = bbp_get_forum_last_reply_author_id( $subforum_id );
 				$output .= "<span class=\"bbp-author-avatar\">" . get_avatar( $author_id, '14' ) . "&nbsp;</span>";
 				$output .= bbp_get_user_profile_link( $author_id );
@@ -588,7 +588,7 @@ class BBP_Default extends BBP_Theme_Compat {
 				$output = "<div class='last-posted-topic-title'>";
 				$output .= "<a href='". bbp_get_forum_last_topic_permalink() ."'>" . bbp_get_topic_last_reply_title( bbp_get_forum_last_active_id() ) . "</a>";
 				$output .= "</div>";
-				$output .= "<div class='last-posted-topic-user'>by ";
+				$output .= "<div class='last-posted-topic-user'>av ";
 				$output .= "<span class=\"bbp-author-avatar\">" . get_avatar( bbp_get_forum_last_reply_author_id(), '14' ) . "&nbsp;</span>";
 				$output .= bbp_get_user_profile_link( bbp_get_forum_last_reply_author_id() );
 				$output .= "</div>";

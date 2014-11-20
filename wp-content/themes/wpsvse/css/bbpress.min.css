@@ -68,9 +68,10 @@
 	background-color: #fdd;
 }
 
-#bbpress-forums .status-closed,
-#bbpress-forums .status-closed a {
-	color: #ccc;
+#bbpress-forums .status-closed .bbp-topic-permalink:before {
+	font-family: "fontawesome";
+	content: "\f023";
+	margin-right: 4px;
 }
 
 #bbpress-forums ul {
@@ -253,6 +254,45 @@ li.bbp-header div.bbp-reply-content .subscription-toggle:before {
 	margin-left: 140px;
 	padding: 12px 12px 12px 0;
 	text-align: left;
+	font-size: 14px;
+	line-height: normal;
+}
+
+#bbpress-forums div.bbp-topic-content p,
+#bbpress-forums div.bbp-reply-content p {
+	font-size: 14px;
+	line-height: normal;	
+}
+
+#bbpress-forums div.bbp-topic-content .d4pbbc-quote,
+#bbpress-forums div.bbp-reply-content .d4pbbc-quote {
+	background-color: #F9F9F9;
+	font-size: 13px;
+}
+
+#bbpress-forums div.bbp-topic-content .d4pbbc-quote p,
+#bbpress-forums div.bbp-reply-content .d4pbbc-quote p {
+	background-color: #F9F9F9;
+	font-size: 13px;
+}
+
+#bbpress-forums div.bbp-topic-content .d4p-bbt-quote-block,
+#bbpress-forums div.bbp-reply-content .d4p-bbt-quote-block {
+	font-size: 12px;
+	border: none;
+}
+
+#bbpress-forums div.bbp-topic-content .d4p-bbt-quote-block a:before,
+#bbpress-forums div.bbp-reply-content .d4p-bbt-quote-block a:before {
+	display: inline-block;
+	content: "\f10e";
+	font-family: "fontawesome";
+	margin-right: 3px;
+}
+
+#bbpress-forums div.bbp-topic-content .bbp-signature,
+#bbpress-forums div.bbp-reply-content .bbp-signature {
+	font-size: 11px;
 }
 
 #bbpress-forums li.bbp-header .bbp-topic-author,
@@ -272,6 +312,7 @@ li.bbp-header div.bbp-reply-content .subscription-toggle:before {
 	margin-left: 140px;
 	padding: 0;
 	text-align: left;
+	font-size: 12px;
 }
 
 div.bbp-topic-header,
@@ -754,6 +795,12 @@ div.bbp-template-notice a {
 		padding: 2px;
 		font-size: 12px;
 		line-height: 140%;
+	}
+div.status-reported {
+	background-color: rgba(204,0,0,.1) !important;
+}
+	.bbp-rc-reply-is-reported {
+		color: #c00;
 	}
 
 /* =Stickies
