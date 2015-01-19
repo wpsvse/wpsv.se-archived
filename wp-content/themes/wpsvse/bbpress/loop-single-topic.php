@@ -9,9 +9,9 @@
 
 ?>
 
-<ul id="topic-<?php bbp_topic_id(); ?>" <?php bbp_topic_class(); ?>>
+<ul id="topic-<?php bbp_topic_id(); ?>" <?php bbp_topic_class( bbp_get_forum_id(), array( 'row' ) ); ?>>
 
-	<li class="bbp-topic-title">
+	<li class="bbp-topic-title col-lg-8">
 
 		<?php if ( bbp_is_user_home() ) : ?>
 
@@ -79,11 +79,11 @@
 
 	</li>
 
-	<li class="bbp-topic-counts">
+	<li class="bbp-topic-counts col-lg-1">
 		<i class="fa fa-comment"></i><div class="bbp-count-badge"><?php bbp_show_lead_topic() ? bbp_topic_reply_count() : bbp_topic_post_count(); ?></div>
 	</li>
 
-	<li class="bbp-topic-freshness">
+	<li class="bbp-topic-freshness col-lg-3">
 
 		<?php do_action( 'bbp_theme_before_topic_freshness_link' ); ?>
 

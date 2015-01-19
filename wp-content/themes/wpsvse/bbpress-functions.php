@@ -11,6 +11,15 @@
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) exit;
 
+// Add bootstrap classes for forum rows
+function add_bootstrap_class( $classes ) {
+
+	$classes[] = 'row';
+	return $classes;
+}
+	
+add_filter( 'bbp_get_forum_class', 'add_bootstrap_class' );
+
 /** Theme Setup ***************************************************************/
 
 if ( !class_exists( 'BBP_Default' ) ) :
@@ -473,14 +482,14 @@ class BBP_Default extends BBP_Theme_Compat {
 
 		// Defaults and arguments
 		$defaults = array (
-			'before'            => '<ul class="bbp-forums-list">',
-			'after'             => '</ul>',
-			'link_before'       => '<li class="bbp-forum">',
-			'link_after'        => '</li>',
-			'count_before'      => ' (',
-			'count_after'       => ')',
-			'count_sep'         => ', ',
-			'separator'         => ', ',
+			'before'            => '<li class="bbp-forums-list">',
+			'after'             => '</li>',
+			'link_before'       => '',
+			'link_after'        => '',
+			'count_before'      => '',
+			'count_after'       => '',
+			'count_sep'         => '',
+			'separator'         => '',
 			'forum_id'          => '',
 			'show_topic_count'  => true,
 			'show_reply_count'  => true,
@@ -525,12 +534,12 @@ class BBP_Default extends BBP_Theme_Compat {
 				}
 
 				if ( !empty( $show_freshness_link ) ) {
-					$freshness_link = "<div class='freshness-forum-link'>" . BBP_Default::epicwebs_get_last_poster_block( $sub_forum->ID ) . "</div>";
+					$freshness_link = "<li class='bbp-forum-freshness col-lg-3'>" . BBP_Default::epicwebs_get_last_poster_block( $sub_forum->ID ) . "</li>";
 				}
 
 				// Build this sub forums link
 				if ($i % 2) { $class = "odd-forum-row"; } else { $class = "even-forum-row"; }
-				$output .= "<li class='{$class}'><ul>" . $link_before . '<div class="bbp-forum-title-container"><a href="' . $permalink . '" class="bbp-forum-link">' . $title . '</a>' . $description . '</div>' . $counts . $freshness_link . $link_after . "</ul></li>";
+				$output .= "<ul class='{$class} bbp-forums-list row'>" . $link_before . '<li class="bbp-forum-info col-lg-8"><a href="' . $permalink . '" class="bbp-forum-title" rel="bookmark">' . $title . '</a><div class="bbp-forum-content"><i class="fa fa-info-circle"></i> <p>' . $description . '</p></div></li><li class="bbp-forum-topic-count col-lg-1">' . $counts . '</li>' . $freshness_link . $link_after . "</ul>";
 			}
 
 			// Output the list

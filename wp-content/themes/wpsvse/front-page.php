@@ -177,7 +177,7 @@ get_header(); ?>
 						<?php if ( has_post_thumbnail() ) {	
                               the_post_thumbnail( 'post-image', array('class' => 'img-responsive img-thumbnail') );
                         } else { ?>
-                          <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/default.jpg" />
+                          <img class="img-responsive img-thumbnail" src="<?php echo get_template_directory_uri(); ?>/img/default.jpg" />
                         <?php } ?>
                         </a>
                         <h4><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h4>
@@ -240,7 +240,7 @@ get_header(); ?>
                   
                   <!-- Start BBPRESS TAGCLOUD -->
                   <div class="forum-widget bbp-forum-tagcloud widget_tag_cloud">
-                      <h3 class="widgettitle">Populära taggar</h3>
+                      <h3 class="widgettitle">Populära ämnestaggar</h3>
                       <div class="tagcloud">
                         <?php echo do_shortcode('[bbp-topic-tags]'); ?> 
                       </div>
