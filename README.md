@@ -9,6 +9,11 @@ För diskussioner, använd [ärendesystemet (Issues)](https://github.com/wpsvse/
 * [Projektplanering, mål och delmål](https://github.com/wpsvse/wpsv.se/wiki/Projektplanering,-m%C3%A5l-och-delm%C3%A5l)
 * [Allmän issue-tråd för diskussioner kring planering, tilldelning osv.](https://github.com/wpsvse/wpsv.se/issues/22)
 
+Vill du delta?
+Observera att projektet består av flera repos.
+* [**Huvudrepo**](https://github.com/wpsvse/wpsv.se/) - Innehåller allt för webbplats och saker runt denna. (Forka denna för tillägg och annat som inte är specifikt för temat).
+* [**Temarepo**](https://github.com/wpsvse/wpsvse/) - Innehåller allt specifkt för temat på wpsv.se. Använd denna repo för allt som rör temat.
+
 Grund till föreslagna förändringar
 ==================================
 
