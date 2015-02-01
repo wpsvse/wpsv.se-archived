@@ -4,3 +4,6 @@
 [submodule "wp-content/themes/wpsvse"]
 	path = wp-content/themes/wpsvse
 	url = git@github.com:wpsvse/wpsvse.git
+[submodule "wp-content/plugins/wpsvse-slider"]
+	path = wp-content/plugins/wpsvse-slider
+	url = git@github.com:wpsvse/wpsvse-slider.git
