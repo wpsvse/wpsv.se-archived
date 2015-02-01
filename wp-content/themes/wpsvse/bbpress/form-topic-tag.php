@@ -13,9 +13,15 @@
 
 	<div id="edit-topic-tag-<?php bbp_topic_tag_id(); ?>" class="bbp-topic-tag-form">
 
-		<fieldset class="bbp-form" id="bbp-edit-topic-tag">
-
-			<legend><?php printf( __( 'Manage Tag: "%s"', 'bbpress' ), bbp_get_topic_tag_name() ); ?></legend>
+			<div class="panel panel-primary">
+				<div class="panel-heading"><h3 class="panel-title" data-toggle="collapse" data-target="#bbp-reply-panel" aria-expanded="false" aria-controls="bbp-reply-panel"><i class="fa fa-plus-square"></i>
+        	
+			<?php printf( __( 'Manage Tag: "%s"', 'bbpress' ), bbp_get_topic_tag_name() ); ?>
+            
+				</h3>
+            </div>
+            
+            <div class="panel-body collapse in" id="bbp-reply-panel">
 
 			<fieldset class="bbp-form" id="tag-rename">
 
@@ -111,7 +117,9 @@
 
 			<?php endif; ?>
 
-		</fieldset>
+			</div>
+            
+            </div>
 	</div>
 
 <?php endif; ?>

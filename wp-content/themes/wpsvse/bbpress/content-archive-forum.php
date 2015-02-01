@@ -14,8 +14,6 @@
 	<?php do_action( 'bbp_template_before_forums_index' ); ?>
     
     <a href="#" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
-    
-    <div class="bbp-breadcrumb"><?php bbp_breadcrumb(); ?></div>
 
 	<?php if ( bbp_has_forums() ) : ?>
 

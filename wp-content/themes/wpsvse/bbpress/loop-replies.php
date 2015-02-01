@@ -11,8 +11,6 @@
 
 <?php do_action( 'bbp_template_before_replies_loop' ); ?>
 
-<div class="bbp-breadcrumb"><?php bbp_breadcrumb(); ?></div>
-
 <ul id="topic-<?php bbp_topic_id(); ?>-replies" class="forums bbp-replies">
 
 	<li class="bbp-header">

@@ -12,6 +12,17 @@
     <section id="other" class="section">
         <div class="container">
             <div class="row">
+            <?php if ( is_bbpress() ) { ?>
+            	<div class="col-md-12 forum-legend">
+                	<ul>
+                    	<li><strong>Info:</strong></li>
+                    	<li><i class="fa fa-bullhorn"></i> Forumnotis</li>
+                        <li><i class="fa fa-thumb-tack"></i> Klistrat ämne</li>
+                        <li><i class="fa fa-exclamation-triangle"></i> Rapporterat ämne</li>
+                        <li><i class="fa fa-lock"></i> Stängt/låst ämne</li>
+                    </ul>
+                </div>
+            <?php } ?>
             </div>
         </div>
     </section>
@@ -51,7 +62,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-5">
-					<p>Copyright &copy; 2007-<?php echo date('Y'); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+					<p><i class="fa fa-info-circle"></i> <abbr title="Gnu Public Licens version 2">GPLv2</abbr> - 2007-<?php echo date('Y'); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
 				</div>
 				<div class="col-md-7">
                   <!-- Start FOOTER MENU -->

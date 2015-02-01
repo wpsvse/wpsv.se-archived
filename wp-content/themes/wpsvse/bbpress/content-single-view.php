@@ -11,8 +11,6 @@
 
 <div id="bbpress-forums">
 
-	<?php bbp_breadcrumb(); ?>
-
 	<?php bbp_set_query_name( 'bbp_view' ); ?>
 
 	<?php if ( bbp_view_query() ) : ?>

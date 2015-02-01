@@ -205,7 +205,7 @@ get_header(); ?>
 			<div class="row">
 				<div class="section-headline">
 					<h2>Diskussionsforum</h2>
-					<span>Behöver du hjälp, har du funderingar, vill du hjälpa andra eller vara en del av communityn? Då är vårt forum platsen för dig!</span>
+					<span>Behöver du hjälp, har du funderingar, vill du hjälpa andra eller vara en del av communityn? Då är vårt <a href="<?php echo esc_url( home_url( '/forum/' ) ); ?>" rel="help">forum</a> platsen för dig!</span>
 				</div>
 			</div>
 			<div class="row">
@@ -220,14 +220,18 @@ get_header(); ?>
                   <div class="forum-widget bbp-forum-search">
                   	<h3>Hitta svar</h3>
                     <p>Vårt forum är som en stor databas med frågor och svar. Testa att söka efter din fråga och få ett svar direkt&hellip;</p>
+                    <form role="search" method="get" id="bbp-search-form" action="<?php bbp_search_url(); ?>">
+                    <label class="screen-reader-text hidden" for="bbp_search"><?php _e( 'Search for:', 'bbpress' ); ?></label>
                     <div class="input-group">
-                     <!-- Start INSERT BBPRESS SEARCH FORM -->
-                      <input type="text" class="form-control">
+                     <!-- Start BBPRESS SEARCH FORM -->
+                      <input type="text" value="<?php echo esc_attr( bbp_get_search_terms() ); ?>" name="bbp_search" id="bbp_search" class="form-control">
+                      <input type="hidden" name="action" value="bbp-search-request" />
                       <span class="input-group-btn">
-                        <button class="btn btn-primary" type="button">Sök</button>
+                        <button class="btn btn-primary" type="submit" id="bbp_search_submit">Sök</button>
                       </span>
-                     <!-- End INSERT BBPRESS SEARCH FORM -->
+                     <!-- End BBPRESS SEARCH FORM -->
                     </div><!-- /input-group -->
+                    </form>
                   </div>
                   
                   <div class="forum-widget new-bbp-post">
@@ -301,7 +305,7 @@ get_header(); ?>
 			<div class="row">
 				<div class="section-headline">
 					<h2>Aktivitetsflöde</h2>
-					<span>Följ den senaste aktiviteten på <?php bloginfo( 'name' ); ?></span>
+					<span>Följ den senaste <a href="<?php echo esc_url( home_url( '/aktivitet/' ) ); ?>">aktiviteten</a> på <?php bloginfo( 'name' ); ?></span>
 				</div>
 			</div>
 			<div class="row">

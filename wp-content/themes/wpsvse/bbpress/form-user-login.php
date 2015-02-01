@@ -10,8 +10,16 @@
 ?>
 
 <form method="post" action="<?php bbp_wp_login_action( array( 'context' => 'login_post' ) ); ?>" class="bbp-login-form">
-	<fieldset class="bbp-form">
-		<legend><?php _e( 'Log In', 'bbpress' ); ?></legend>
+	
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h3 class="panel-title" data-toggle="collapse" data-target="#bbp-reply-panel" aria-expanded="false" aria-controls="bbp-reply-panel"><i class="fa fa-user"></i>
+		
+		<?php _e( 'Log In', 'bbpress' ); ?>
+        
+        </h3>
+    </div>
+    
+    <div class="panel-body collapse in" id="bbp-reply-panel">
 
 		<div class="bbp-username">
 			<label for="user_login"><?php _e( 'Username', 'bbpress' ); ?>: </label>
@@ -37,5 +45,6 @@
 			<?php bbp_user_login_fields(); ?>
 
 		</div>
-	</fieldset>
+	</div>
+    </div>
 </form>

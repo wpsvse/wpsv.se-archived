@@ -11,7 +11,7 @@
 
 <div id="bbpress-forums">
 	<?php do_action( 'bbp_template_before_single_forum' ); ?>
-
+    
 	<?php if ( post_password_required() ) : ?>
 
 		<?php bbp_get_template_part( 'form', 'protected' ); ?>
@@ -20,13 +20,13 @@
     
     	<?php bbp_single_forum_description(); ?>
         
-        <a href="#" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
-        
-        <div class="bbp-breadcrumb"><?php bbp_breadcrumb(); ?></div>
+        	<a href="#" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
 
 		<?php if ( bbp_get_forum_subforum_count() && bbp_has_forums() ) : ?>
-
+			
 			<?php bbp_get_template_part( 'loop', 'forums' ); ?>
+            
+            <a href="#" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
 
 		<?php endif; ?>
 
@@ -50,10 +50,8 @@
 
 		<?php endif; ?>
         
-        <a href="#" title="Skapa ett nytt ämne i forumet" class="btn btn-primary bbp-new-topic-btn"><i class="fa fa-plus-square"></i> Nytt ämne</a>
-        
 	<?php endif; ?>
-
+	
 	<?php do_action( 'bbp_template_after_single_forum' ); ?>
 
 </div>

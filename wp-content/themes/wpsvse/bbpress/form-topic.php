@@ -13,8 +13,6 @@
 
 <div id="bbpress-forums">
 
-	<?php bbp_breadcrumb(); ?>
-
 <?php endif; ?>
 
 <?php if ( bbp_is_topic_edit() ) : ?>
@@ -31,8 +29,8 @@
 
 			<?php do_action( 'bbp_theme_before_topic_form' ); ?>
 
-			<fieldset class="bbp-form">
-				<legend>
+			<div class="panel panel-primary">
+				<div class="panel-heading"><h3 class="panel-title" data-toggle="collapse" data-target="#bbp-reply-panel" aria-expanded="false" aria-controls="bbp-reply-panel"><i class="fa fa-plus-square"></i>
 
 					<?php
 						if ( bbp_is_topic_edit() )
@@ -41,7 +39,10 @@
 							bbp_is_single_forum() ? printf( __( 'Create New Topic in &ldquo;%s&rdquo;', 'bbpress' ), bbp_get_forum_title() ) : _e( 'Create New Topic', 'bbpress' );
 					?>
 
-				</legend>
+				</h3>
+            </div>
+            
+            <div class="panel-body collapse" id="bbp-reply-panel">
 
 				<?php do_action( 'bbp_theme_before_topic_form_notices' ); ?>
 
@@ -205,7 +206,8 @@
 
 				<?php bbp_topic_form_fields(); ?>
 
-			</fieldset>
+			</div>
+            </div>
 
 			<?php do_action( 'bbp_theme_after_topic_form' ); ?>
 

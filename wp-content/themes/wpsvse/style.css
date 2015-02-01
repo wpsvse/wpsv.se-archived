@@ -76,6 +76,14 @@ button {
 	-o-transition:all 0.3s ease-in-out;
 	transition:all 0.3s ease-in-out;
 }
+button.popover-link {
+	padding: 0;
+	border: none;
+	background: none;
+}
+button.popover-link:focus {
+	outline: none;
+}
 ul {
 	list-style: none;
 	padding-left: 0;
@@ -428,6 +436,29 @@ input[type=text],
 	float: left;
 	margin-right: 15px;
 }
+
+/* ==========================================================================
+	Panels
+============================================================================ */
+
+.panel-primary>.panel-heading {
+	color: #fff;
+	background-color: #21759b;
+	border-color: #2e6da4;
+	cursor: pointer;
+}
+
+.panel-primary>.panel-heading i {
+	margin-right: 4px;
+}
+
+.panel-primary {
+	border-color: #2e6da4;
+}
+
+.panel-primary label {
+	font-weight: normal;
+}
 	
 /* ==========================================================================
   Main Sections
@@ -470,6 +501,9 @@ input[type=text],
 	border-top: 1px solid #EEE;
 	border-bottom: 1px solid #EEE;
 	background: #F8F8F8;
+}
+.bbpress #other {
+	padding: 25px 0;
 }
 #footer-widgets {
 	background: url(img/blur.jpg);
@@ -901,6 +935,9 @@ input[type=text],
 article.post {
 	margin-bottom: 75px;
 }
+.single article.post {
+	margin-bottom: 25px;
+}
 .post .content-frame {
 	padding: 8px 15px;
 }
@@ -916,11 +953,28 @@ article.post img {
 	text-shadow: none;
 	padding: 25px 25px 0px 25px;
 }
+.post .single-entry-title {
+	font-size: 28px;
+	text-shadow: none;
+	padding: 25px 0 0;
+}
 article.post h1 a {
 	font-weight: 300;
 }
 .post-image {
 	position: relative;
+}
+.single .post-image {
+	border-bottom: 3px solid #21759B;
+}
+.single-meta-header {
+	padding-bottom: 25px;
+}
+.single-meta-header span {
+	padding-right: 15px;
+}
+.single-meta-header span a {
+	color: #666;
 }
 .post .entry-content {
 	background-color: #f8f8f8;
@@ -937,6 +991,12 @@ article.post h1 a {
 	padding: 8px 25px;
 	line-height: 32px;
 }
+.single-footer-meta {
+	background-color: #f8f8f8;
+	padding: 8px 15px 2px;
+	margin: 25px 0 0;
+	border: 1px solid #eee;
+}
 .entry-meta-user,
 .entry-meta-category,
 .entry-meta-read-more {
@@ -945,14 +1005,30 @@ article.post h1 a {
 .entry-meta-user .avatar {
 	width: 24px;
 	height: auto;
-	border-radius: 16px;
+	border-radius: 12px;
 	background-color: #fff;
+}
+.single-footer-meta .avatar {
+	width: 24px;
+	border-radius: 12px;
+	float: left;
+}
+.single-footer-meta .popover-link {
+	margin-right: 8px;
+}
+.single-footer-meta .popover-link i {
+	font-size: 24px;
+	line-height: 24px;
+	float: left;
+	color: #21759b;
 }
 .entry-meta-read-more {
 	float: right;
 }
 .entry-meta-date,
-.entry-meta-comments {
+.entry-meta-comments,
+.single-meta-date,
+.single-meta-comments {
 	position: absolute;
 	padding: 5px 15px;
 	color: #fff;
@@ -961,16 +1037,19 @@ article.post h1 a {
 	text-align: right;
 	right: 0;
 }
-.entry-meta-date {
+.entry-meta-date,
+.single-meta-date {
 	background-color: rgba(33,117,155,.7);
 	bottom: 35px;
 }
-.entry-meta-comments {
+.entry-meta-comments,
+.single-meta-comments {
 	background-color: rgba(51,51,51,.7);
 	bottom: 0;
 	color: #fff;
 }
-.entry-meta-comments a {
+.entry-meta-comments a,
+.single-meta-comments a {
 	color: #fff;
 }
 
@@ -1008,6 +1087,31 @@ article.post h1 a {
 }
 .extra-features h4 {
 	font-weight: bold;
+}
+
+/* ==========================================================================
+   Sidebar
+============================================================================ */
+#sidebar {}
+
+#sidebar .widget {
+	padding-bottom: 25px;
+}
+#sidebar li {
+	padding: 4px 0 4px 15px;
+}
+#sidebar li:hover {
+	background-color: #f8f8f8;
+}
+#sidebar li:before {
+	font-family: "FontAwesome";
+	content: "\f105";
+	left: 15px;
+	position: absolute;
+}
+#sidebar li:hover:before {
+	color: #21759B;
+	content: "\f0da";
 }
 
 /* ==========================================================================
@@ -1093,8 +1197,19 @@ article.post h1 a {
 /* ==========================================================================
 	Footer Links
 ============================================================================ */
+.forum-legend li {
+	display: inline-block;
+	margin-right: 15px;
+}
+.forum-legend p {
+	margin: 0;
+	color: #999;
+}
 #footer p {
 	margin-bottom: 0;
+}
+#footer i {
+	color: #21759B;
 }
 .footer-links {
 	list-style: none;

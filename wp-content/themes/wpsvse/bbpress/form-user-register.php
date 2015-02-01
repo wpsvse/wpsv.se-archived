@@ -10,8 +10,16 @@
 ?>
 
 <form method="post" action="<?php bbp_wp_login_action( array( 'context' => 'login_post' ) ); ?>" class="bbp-login-form">
-	<fieldset class="bbp-form">
-		<legend><?php _e( 'Create an Account', 'bbpress' ); ?></legend>
+	
+			<div class="panel panel-primary">
+				<div class="panel-heading"><h3 class="panel-title" data-toggle="collapse" data-target="#bbp-reply-panel" aria-expanded="false" aria-controls="bbp-reply-panel"><i class="fa fa-user-plus"></i>
+		
+		<?php _e( 'Create an Account', 'bbpress' ); ?>
+        
+				</h3>
+            </div>
+            
+            <div class="panel-body collapse in" id="bbp-reply-panel">
 
 		<div class="bbp-template-notice">
 			<p><?php _e( 'Your username must be unique, and cannot be changed later.', 'bbpress' ) ?></p>
@@ -38,5 +46,6 @@
 			<?php bbp_user_register_fields(); ?>
 
 		</div>
-	</fieldset>
+	</div>
+    </div>
 </form>

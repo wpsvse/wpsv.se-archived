@@ -11,8 +11,6 @@
 
 <div id="bbpress-forums">
 
-	<?php bbp_breadcrumb(); ?>
-
 	<?php do_action( 'bbp_template_before_single_reply' ); ?>
 
 	<?php if ( post_password_required() ) : ?>

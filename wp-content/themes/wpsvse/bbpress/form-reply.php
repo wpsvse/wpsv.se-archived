@@ -13,8 +13,6 @@
 
 <div id="bbpress-forums">
 
-	<?php bbp_breadcrumb(); ?>
-
 <?php endif; ?>
 
 <?php if ( bbp_current_user_can_access_create_reply_form() ) : ?>
@@ -25,8 +23,11 @@
 
 			<?php do_action( 'bbp_theme_before_reply_form' ); ?>
 
-			<fieldset class="bbp-form">
-				<legend><?php printf( __( 'Reply To: %s', 'bbpress' ), bbp_get_topic_title() ); ?></legend>
+			<div class="panel panel-primary">
+				<div class="panel-heading"><h3 class="panel-title" data-toggle="collapse" data-target="#bbp-reply-panel" aria-expanded="false" aria-controls="bbp-reply-panel"><i class="fa fa-plus-square"></i> <?php printf( __( 'Reply To: %s', 'bbpress' ), bbp_get_topic_title() ); ?></h3>
+            </div>
+                
+                <div class="panel-body collapse" id="bbp-reply-panel">
 
 				<?php do_action( 'bbp_theme_before_reply_form_notices' ); ?>
 
@@ -158,7 +159,9 @@
 
 				<?php bbp_reply_form_fields(); ?>
 
-			</fieldset>
+			</div>
+            
+            </div>
 
 			<?php do_action( 'bbp_theme_after_reply_form' ); ?>
 

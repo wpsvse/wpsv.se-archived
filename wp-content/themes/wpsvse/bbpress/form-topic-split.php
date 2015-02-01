@@ -11,17 +11,21 @@
 
 <div id="bbpress-forums">
 
-	<?php bbp_breadcrumb(); ?>
-
 	<?php if ( is_user_logged_in() && current_user_can( 'edit_topic', bbp_get_topic_id() ) ) : ?>
 
 		<div id="split-topic-<?php bbp_topic_id(); ?>" class="bbp-topic-split">
 
 			<form id="split_topic" name="split_topic" method="post" action="<?php the_permalink(); ?>">
 
-				<fieldset class="bbp-form">
-
-					<legend><?php printf( __( 'Split topic "%s"', 'bbpress' ), bbp_get_topic_title() ); ?></legend>
+			<div class="panel panel-primary">
+				<div class="panel-heading"><h3 class="panel-title" data-toggle="collapse" data-target="#bbp-reply-panel" aria-expanded="false" aria-controls="bbp-reply-panel"><i class="fa fa-plus-square"></i>
+                
+				<?php printf( __( 'Split topic "%s"', 'bbpress' ), bbp_get_topic_title() ); ?>
+                
+				</h3>
+            </div>
+            
+            <div class="panel-body collapse in" id="bbp-reply-panel">
 
 					<div>
 
@@ -101,7 +105,9 @@
 
 					<?php bbp_split_topic_form_fields(); ?>
 
-				</fieldset>
+			</div>
+            
+            </div>
 			</form>
 		</div>
 

@@ -5,58 +5,27 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-
-		<div class="entry-meta">
-			<?php wpsvse_posted_on(); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'wpsvse' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-meta">
-		<?php
-			/* translators: used between list items, there is a space after the comma */
-			$category_list = get_the_category_list( __( ', ', 'wpsvse' ) );
-
-			/* translators: used between list items, there is a space after the comma */
-			$tag_list = get_the_tag_list( '', __( ', ', 'wpsvse' ) );
-
-			if ( ! wpsvse_categorized_blog() ) {
-				// This blog only has 1 category so we just need to worry about tags in the meta text
-				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'wpsvse' );
-				} else {
-					$meta_text = __( 'Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'wpsvse' );
-				}
-
-			} else {
-				// But this blog has loads of categories so we should probably display them here
-				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'wpsvse' );
-				} else {
-					$meta_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'wpsvse' );
-				}
-
-			} // end check for categories on this blog
-
-			printf(
-				$meta_text,
-				$category_list,
-				$tag_list,
-				get_permalink()
-			);
-		?>
-
-		<?php edit_post_link( __( 'Edit', 'wpsvse' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-meta -->
+        
+    <div class="post-image">
+      <a href="<?php the_permalink(); ?>" rel="bookmark">
+          <?php if ( has_post_thumbnail() ) { 
+            the_post_thumbnail('post-img');
+          } else { ?>
+            <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/default.jpg" alt="" />
+          <?php } ?>
+      </a>
+        <div class="single-meta-comments"><?php comments_popup_link('0 kommentarer', '1 kommentar', '% kommentarer'); ?></div>
+        <div class="single-meta-date"><time><?php the_time('l, j F Y'); ?></time></div>
+    </div><!-- .post-image -->
+    
+    <div class="single-content clearfix">
+        <h1 class="single-entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+        <div class="single-meta-header"><span><i class="fa fa-clock-o"></i> <?php the_time('j F'); ?></span> <span><i class="fa fa-folder"></i> <?php the_category(', '); ?></span> <?php the_tags( '<span><i class="fa fa-tags"></i> ', ', ', '</span>' ); ?><?php edit_post_link('Redigera', '<span><i class="fa fa-pencil"></i> ', '</span>'); ?></div>
+        <div class="single-content"><?php the_content(); ?></div>
+        <div class="single-footer-meta">
+            <button class="popover-link" data-html="true" data-container="body" data-placement="top" data-toggle="popover" data-trigger="focus" data-content="Det här inlägget publicerades av <strong><?php the_author(); ?></strong> för WordPress Sverige"><?php echo get_avatar( get_the_author_meta('ID'), 96 ); ?></button>
+            <button class="popover-link" data-html="true" data-container="body" data-placement="top" data-toggle="popover" data-trigger="focus" data-content="Direktlänk/kortlänk till denna nyhet <a href='<?php echo wp_get_shortlink(); ?>'><?php echo wp_get_shortlink(); ?></a>"><i class="fa fa-bookmark"></i></button>
+        </div>
+    </div><!-- .entry-meta -->
+    
 </article><!-- #post-## -->

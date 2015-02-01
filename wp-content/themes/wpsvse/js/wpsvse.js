@@ -9,6 +9,11 @@ jQuery(document).ready(function($) {
 	$('.wpsvse-tooltip').tooltip()
 	
 	// ***************************
+	// Popover
+	// ***************************
+	$('[data-toggle="popover"]').popover()
+	
+	// ***************************
 	// Head slider
 	// ***************************
 	$('#header-slider').carousel({

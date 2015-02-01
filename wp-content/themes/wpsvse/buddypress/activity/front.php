@@ -122,7 +122,7 @@
             
 					<?php do_action( 'bp_before_activity_loop' ); ?>
                     
-                    <?php if ( bp_has_activities( bp_ajax_querystring( 'activity' ) .'&per_page=10' ) ) : ?>
+                    <?php if ( bp_has_activities( bp_ajax_querystring( 'activity' ) .'&per_page=5' ) ) : ?>
                     
                         <?php /* Show pagination if JS is not enabled, since the "Load More" link will do nothing */ ?>
                         <noscript>

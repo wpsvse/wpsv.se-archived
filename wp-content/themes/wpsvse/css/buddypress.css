@@ -328,15 +328,19 @@ body.activity-permalink #buddypress .activity-content blockquote {
 }
 #buddypress .activity-list li.load-more,
 #buddypress .activity-list li.load-newest {
-	background: #f0f0f0;
+	background: #21759B;
 	font-size: 110%;
 	margin: 15px 0;
 	padding: 10px 15px;
 	text-align: center;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 #buddypress .activity-list li.load-more a,
 #buddypress .activity-list li.load-newest a {
-	color: #4D4D4D;
+	color: #fff;
+	display: block;
 }
 
 

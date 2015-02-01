@@ -13,8 +13,15 @@
 
 	<?php do_action( 'bbp_theme_before_anonymous_form' ); ?>
 
-	<fieldset class="bbp-form">
-		<legend><?php ( bbp_is_topic_edit() || bbp_is_reply_edit() ) ? _e( 'Author Information', 'bbpress' ) : _e( 'Your information:', 'bbpress' ); ?></legend>
+			<div class="panel panel-primary">
+				<div class="panel-heading"><h3 class="panel-title" data-toggle="collapse" data-target="#bbp-reply-panel" aria-expanded="false" aria-controls="bbp-reply-panel"><i class="fa fa-plus-square"></i>
+		
+		<?php ( bbp_is_topic_edit() || bbp_is_reply_edit() ) ? _e( 'Author Information', 'bbpress' ) : _e( 'Your information:', 'bbpress' ); ?>
+        
+				</h3>
+            </div>
+            
+            <div class="panel-body collapse in" id="bbp-reply-panel">
 
 		<?php do_action( 'bbp_theme_anonymous_form_extras_top' ); ?>
 
@@ -35,7 +42,9 @@
 
 		<?php do_action( 'bbp_theme_anonymous_form_extras_bottom' ); ?>
 
-	</fieldset>
+			</div>
+            
+            </div>
 
 	<?php do_action( 'bbp_theme_after_anonymous_form' ); ?>
 

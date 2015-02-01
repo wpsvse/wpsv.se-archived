@@ -10,8 +10,16 @@
 ?>
 
 <form method="post" action="<?php bbp_wp_login_action( array( 'action' => 'lostpassword', 'context' => 'login_post' ) ); ?>" class="bbp-login-form">
-	<fieldset class="bbp-form">
-		<legend><?php _e( 'Lost Password', 'bbpress' ); ?></legend>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h3 class="panel-title" data-toggle="collapse" data-target="#bbp-reply-panel" aria-expanded="false" aria-controls="bbp-reply-panel"><i class="fa fa-question-circle"></i>
+		
+		<?php _e( 'Lost Password', 'bbpress' ); ?>
+        
+        </h3>
+    </div>
+    
+    <div class="panel-body collapse in" id="bbp-reply-panel">
 
 		<div class="bbp-username">
 			<p>
@@ -29,5 +37,6 @@
 			<?php bbp_user_lost_pass_fields(); ?>
 
 		</div>
-	</fieldset>
+	</div>
+    </div>
 </form>

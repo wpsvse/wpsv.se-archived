@@ -9,7 +9,7 @@
 
 ?>
 
-<ul id="topic-<?php bbp_topic_id(); ?>" <?php bbp_topic_class( bbp_get_forum_id(), array( 'row' ) ); ?>>
+<ul id="topic-<?php bbp_topic_id(); ?>" <?php bbp_topic_class( bbp_get_topic_id(), array( 'row' ) ); ?>>
 
 	<li class="bbp-topic-title col-lg-8">
 
