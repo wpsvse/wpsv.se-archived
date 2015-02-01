@@ -17,7 +17,7 @@ Vill du delta?
 * **Tema** - [wpsvse](https://github.com/wpsvse/wpsvse/) - Innehåller allt specifkt för temat på wpsv.se. Använd denna repo för att pusha uppdateringar för temat.
 * **Tillägg - Bloggposttyp** - [wpsvse-blog](https://github.com/wpsvse/wpsvse-blog) - Innehåller tillägg för bloggposttyp. Använda denna repo för att pusha uppdateringar specifika för detta tillägg.
 * **Tillägg - Sliderposttyp** - [wpsvse-slider](https://github.com/wpsvse/wpsvse-slider) - Innehåller tillägg för sliderposttyp. Använda denna repo för att pusha uppdateringar specifika för detta tillägg.
-* **Forumtillägg - Markera som löst** - [wpsvse-mark-solved](https://github.com/wpsvse/wpsvse-mark-solved) - Innehåller forumtillägg för markera som löst-funktionalitet. Använda denna repo för att pusha uppdateringar specifika för detta tillägg.
+* **Forumtillägg - Markera som löst** - [wpsvse-mark-resolved](https://github.com/wpsvse/wpsvse-mark-resolved) - Innehåller forumtillägg för markera som löst-funktionalitet. Använda denna repo för att pusha uppdateringar specifika för detta tillägg.
 
 Grund till föreslagna förändringar
 ==================================
