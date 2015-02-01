@@ -10,9 +10,14 @@ För diskussioner, använd [ärendesystemet (Issues)](https://github.com/wpsvse/
 * [Allmän issue-tråd för diskussioner kring planering, tilldelning osv.](https://github.com/wpsvse/wpsv.se/issues/22)
 
 Vill du delta?
-Observera att projektet består av flera repos.
-* [**Huvudrepo**](https://github.com/wpsvse/wpsv.se/) - Innehåller allt för webbplats och saker runt denna. (Forka denna för tillägg och annat som inte är specifikt för temat).
-* [**Temarepo**](https://github.com/wpsvse/wpsvse/) - Innehåller allt specifkt för temat på wpsv.se. Använd denna repo för allt som rör temat.
+==============
+***Observera att projektet består av flera repos***
+
+* **Huvudrepo** - [wpsv.se](https://github.com/wpsvse/wpsv.se/) - Innehåller alla delar av WordPress Sverige, subrepos inkluderas via submodule (pusha inget till denna repo)
+* **Tema** - [wpsvse](https://github.com/wpsvse/wpsvse/) - Innehåller allt specifkt för temat på wpsv.se. Använd denna repo för att pusha uppdateringar för temat.
+* **Tillägg - Bloggposttyp** - [wpsvse-blog](https://github.com/wpsvse/wpsvse-blog) - Innehåller tillägg för bloggposttyp. Använda denna repo för att pusha uppdateringar specifika för detta tillägg.
+* **Tillägg - Sliderposttyp** - [wpsvse-slider](https://github.com/wpsvse/wpsvse-slider) - Innehåller tillägg för sliderposttyp. Använda denna repo för att pusha uppdateringar specifika för detta tillägg.
+* **Forumtillägg - Markera som löst** - [wpsvse-mark-solved](https://github.com/wpsvse/wpsvse-mark-solved) - Innehåller forumtillägg för markera som löst-funktionalitet. Använda denna repo för att pusha uppdateringar specifika för detta tillägg.
 
 Grund till föreslagna förändringar
 ==================================
