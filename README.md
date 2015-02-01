@@ -11,7 +11,7 @@ För diskussioner, använd [ärendesystemet (Issues)](https://github.com/wpsvse/
 
 Vill du delta?
 ==============
-***Observera att projektet består av flera repos*** [Information för GitHub repos](https://github.com/wpsvse/wpsv.se/wiki/Information-f%C3%B6r-GitHub-repos)
+***Observera att projektet består av flera repos*** ([Information för GitHub repos](https://github.com/wpsvse/wpsv.se/wiki/Information-f%C3%B6r-GitHub-repos))
 
 * **Huvudrepo** - [wpsv.se](https://github.com/wpsvse/wpsv.se/) - Innehåller alla delar av WordPress Sverige, subrepos inkluderas via submodule (pusha inget till denna repo)
 * **Tema** - [wpsvse](https://github.com/wpsvse/wpsvse/) - Innehåller allt specifkt för temat på wpsv.se. Använd denna repo för att pusha uppdateringar för temat.
