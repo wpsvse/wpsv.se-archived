@@ -66,6 +66,7 @@ function wpsvse_setup() {
 endif; // wpsvse_setup
 add_action( 'after_setup_theme', 'wpsvse_setup' );
 
+if ( ! function_exists( 'wpsvse_widgets_init' ) ) :
 /**
  * Register widgetized area and update sidebar with default widgets
  */
@@ -87,6 +88,7 @@ function wpsvse_widgets_init() {
 		'after_widget'  => '</div>',
 	) );
 }
+endif;
 add_action( 'widgets_init', 'wpsvse_widgets_init' );
 
 /**
