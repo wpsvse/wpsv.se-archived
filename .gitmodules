@@ -7,3 +7,6 @@
 [submodule "wp-content/plugins/wpsvse-slider"]
 	path = wp-content/plugins/wpsvse-slider
 	url = git@github.com:wpsvse/wpsvse-slider.git
+[submodule "wp-content/plugins/wpsvse-mark-resolved"]
+	path = wp-content/plugins/wpsvse-mark-resolved
+	url = git@github.com:wpsvse/wpsvse-mark-resolved.git
