@@ -4,3 +4,6 @@
 [submodule "wp-content/plugins/wpsvse-blog"]
 	path = wp-content/plugins/wpsvse-blog
 	url = git@github.com:wpsvse/wpsvse-blog.git
+[submodule "wp-content/themes/wpsvse"]
+	path = wp-content/themes/wpsvse
+	url = git@github.com:wpsvse/wpsvse.git
