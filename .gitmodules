@@ -10,6 +10,3 @@
 [submodule "wp-content/plugins/wpsvse-mark-resolved"]
 	path = wp-content/plugins/wpsvse-mark-resolved
 	url = git@github.com:wpsvse/wpsvse-mark-resolved.git
-[submodule "wpsv.se/wp-content/themes/wpsvse"]
-	path = wpsv.se/wp-content/themes/wpsvse
-	url = git@github.com:wpsvse/wpsvse.git
