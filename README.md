@@ -7,10 +7,13 @@ För diskussioner, använd [ärendesystemet (Issues)](https://github.com/wpsvse/
 
 * [Informationsstruktur](https://github.com/wpsvse/wpsv.se/wiki/Informationsstruktur-f%C3%B6r-projektet)
 * [Projektplanering, mål och delmål](https://github.com/wpsvse/wpsv.se/wiki/Projektplanering,-m%C3%A5l-och-delm%C3%A5l)
-* [Allmän issue-tråd för diskussioner kring planering, tilldelning osv.](https://github.com/wpsvse/wpsv.se/issues/22)
+* [Allmän issue-tråd för diskussioner kring planering, tilldelning osv.](https://github.com/wpsvse/wpsv.se/issues/22) och/eller [WordPress Sverige @ Slack](https://wpsv.slack.com)
 
 Vill du delta?
 ==============
+
+**Slack [[?]](https://slack.com/is)** - [WordPress Sverige @ Slack](https://wpsv.slack.com) - Efterfråga inbjudan via info (at) wpsv punkt se
+
 ***Observera att projektet består av flera repos*** ([Information för GitHub repos](https://github.com/wpsvse/wpsv.se/wiki/Information-f%C3%B6r-GitHub-repos))
 
 * **Huvudrepo** - [wpsv.se](https://github.com/wpsvse/wpsv.se/) - Innehåller alla delar av WordPress Sverige, subrepos inkluderas via submodule (pusha inget till denna repo)
