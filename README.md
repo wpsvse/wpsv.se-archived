@@ -3,11 +3,11 @@ WordPress Sverige
 
 Utvecklingsversion av WordPress Sverige. Det här är ett försök till samlad utveckling av WordPress Sveriges communityportal. 
 
-För diskussioner, använd [ärendesystemet (Issues)](https://github.com/wpsvse/wpsv.se/issues). Var inte rädda för att tycka till och säga ert!
+För diskussioner, använd vår [Slack](https://wpsv.slack.com) (se hur du får invite nedan). Var inte rädda för att tycka till och säga ert, ju mer input desto bättre!
 
 * [Informationsstruktur](https://github.com/wpsvse/wpsv.se/wiki/Informationsstruktur-f%C3%B6r-projektet)
 * [Projektplanering, mål och delmål](https://github.com/wpsvse/wpsv.se/wiki/Projektplanering,-m%C3%A5l-och-delm%C3%A5l)
-* [Allmän issue-tråd för diskussioner kring planering, tilldelning osv.](https://github.com/wpsvse/wpsv.se/issues/22) och/eller [WordPress Sverige @ Slack](https://wpsv.slack.com)
+* ~~[Allmän issue-tråd för diskussioner kring planering, tilldelning osv.](https://github.com/wpsvse/wpsv.se/issues/22) och/eller~~ använd [Slack](https://wpsv.slack.com).
 
 Vill du delta?
 ==============
