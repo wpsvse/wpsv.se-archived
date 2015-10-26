@@ -22,6 +22,7 @@ Vill du delta?
 * **Tillägg - Sliderposttyp** - [wpsvse-slider](https://github.com/wpsvse/wpsvse-slider) - Innehåller tillägg för sliderposttyp. Använda denna repo för att pusha uppdateringar specifika för detta tillägg.
 * **Tillägg - Forumredigerare** - [wpsvse-forum-editor](https://github.com/wpsvse/wpsvse-forum-editor) - En anpassad version av TinyMCE för WordPress Sveriges forum.
 * **Forumtillägg - Markera som löst** - [wpsvse-mark-resolved](https://github.com/wpsvse/wpsvse-mark-resolved) - Innehåller forumtillägg för markera som löst-funktionalitet. Använda denna repo för att pusha uppdateringar specifika för detta tillägg.
+* **Tillägg - Översättningslistning** - [wpsvse-translators](https://github.com/wpsvse/wpsvse-translators) - Anpassade posttyper, taxonomi och metaboxar för att hantera översättningslistning.
 
 Tänkt planering
 ===============
