@@ -31,13 +31,7 @@ Tänkt planering
 * Förbättringar av aktuella funktioner.
 * Funktioner efter medlemmarnas önskemål.
 * Skapa en svensk grundläggande dokumentation.
-* Lägg upp GlotPress som översättningsplattform och försök att automatisera så mycket som möjligt mot filarkiv och för uppladdning av språkfiler.
-* ~~Gör hela WordPress Sverige responsivt baserat på förslagsvis Bootstrap 3.~~
-* ~~Skapa ett nytt tema med ny design och samma tänk av upplägg som tidigare (gäller framför allt startsidan).~~
-* ~~Trimma all anpassad funktionalitet i WordPress och flytta ut det ur temat (se branch 3.0).~~
-* ~~Byt ut vBulletin mot bbPress+BuddyPress.~~
-* ~~Lägg till BuddyPress som communityverktyg~~
-* ~~Skapa översättningsteam och grupper under BuddyPress/GlotPress.~~
+* Skapa funktionalitet för helt opartisk webbhotellsjämförelsetjänst.
 
 Målet med WordPress Sverige
 ===========================
